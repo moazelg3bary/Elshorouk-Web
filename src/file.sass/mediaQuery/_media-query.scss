@@ -1,0 +1,28 @@
+/* start Media query */
+@media  (max-width: 992px) {
+    header .info  {
+        .text {
+            color: #000;
+            text-align: center;
+            padding: 40px 40px;
+            border: 2px solid $color-rm;
+        }
+        .el-hide {
+            height: 565px;
+        }
+    }
+    footer .contact-us {
+        flex-wrap: wrap;
+    }
+}
+@media  (max-width: 767px) {
+    header .info .btn-group {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        button {
+            flex-grow: 1;
+        }
+    }
+}
+/* end Media query */

@@ -6,15 +6,338 @@ html(lang = 'en')
     meta(name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     title Elshorouk Web
+    link(rel=rel='stylesheet' href = 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap')
     link(rel = 'stylesheet', href = '../file.css/bootstrap.css')
     link(rel = 'stylesheet', href = '../file.css/bootstrap-editor.css')
     link(rel = 'stylesheet', href = '../file.css/all.css')
     link(rel = 'stylesheet', href = '../file.css/style.css')
+    link(rel = 'stylesheet', href = '../file.css/style.ar.css')
     <!-- [if lt IE 9]>
       script(src = '../file.js/html5shiv.min.js')
       script(src = '../file.js/respond.min.js')
     <![endif]-->
   body
+    // start header
+    .top-header
+      // container Bootstrap 4
+      .container
+        .row
+          // gird system B4 & class
+          .col-sm-4.col-md-4.col-lg-3.text-center.text-sm-left.my-2.px-1.px-sm-0.phone
+            span الهاتف : 010111155422 
+            // use icon fontAwesome 5
+            i.fas.fa-phone-square
+          .col-sm-5.col-md-4.col-lg-7.text-center.my-2.px-1.px-sm-0.time
+            span من الساعه (8 ص - 5 م ) طول ايام الاسبوع ماعدا الجمعه والاجازات الرسميه 
+            // use icon fontAwesome 5
+            i.far.fa-clock
+          .col-sm-3.col-md-4.col-lg-2.text-center.text-sm-right.my-2.px-1.px-sm-0.location
+            span المنيا - دمشير 
+            // use icon fontAwesome 5
+            i.fal.fa-map-marker-alt
+    header
+      // use navbar Bootstrp 4
+      nav(class="navbar navbar-expand-lg navbar-light dir-right")
+        // container Bootstrap 4
+        .container
+          a(class="navbar-brand m-0" href="#"): img(src="../image/logo.png" width="53" height="68" alt="" loading="lazy")
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span: i.far.fa-bars
+          div(class="collapse navbar-collapse" id="navbarSupportedContent")
+            ul(class="navbar-nav mr-auto")
+              li(class="nav-item")
+                // use icon fontAwesome 5
+                a(class="nav-link" href="#") #[i.far.fa-address-card.mx-1] تواصل معنا 
+              li(class="nav-item")
+                // use icon fontAwesome 5
+                a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1] الأسئلة الشائعة
+              li(class="nav-item dropdown")
+                // use icon fontAwesome 5
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-sign-in-alt.mx-1] تسجيل الدخول
+                div( class="dropdown-menu" aria-labelledby="navbarDropdown")
+                  a(class="dropdown-item" href="#") Action
+                  a(class="dropdown-item" href="#") Another action
+                  div(class="dropdown-divider")
+                  a(class="dropdown-item" href="#") Something else here
+              li(class="nav-item")
+                // use icon fontAwesome 5
+                a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+              li(class="nav-item")
+                // use icon fontAwesome 5
+                a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+      .info
+        .container
+          .row.text-right
+            .col-sm-12.col-md-12.col-lg-6.el-hide
+            .col-sm-12.col-md-12.col-lg-6.text.mt-4
+              p شركة الشروق للتجارة والتوزيع شركة استثمار خاصة , تم انشاء موقع شركة الشروق للتجارة والتوزيع ليكون أكبر موقع تسوق إلكتروني لأدوات المنزل في مصر والشرق الأوسط. إذا كنت تبحث عن علب الطعام، أدوات الطبخ، لانش بوكس، أدوات شرب، أدوات زجاجية، أدوات خبز وغيرها فإن موقع شركة الشروق للتجارة والتوزيع هو المكان الأمثل لتجد فيه ما تريد، فجميع مع تريد لبيتك ستجده في موقع واحد. جميع المنتجات المعروضة على الموقع أصلية وذات جودة عالية.
+              p نحن موزع معتمد للعديد من العلامات التجارية الشهيرة، مثل الهلال والنجمة ولمسة وماكس كما يوفر الموقع أفضل الأسعار لأفضل المنتجاتمهمتنا هي توفير تجربة تسوق مميزة للعميل عن طريق توفير منتجات جديدة ومتنوعة، ونقوم بتوصيل كل طلباتكم حتى باب منزلكم , وطرق الدفع كثيرة ومنها الدفع عند الإستلام رؤيتنا هي أن نكون الموقع رقم واحد لبيع أدوات المنزل في الشرق الأوسط
+            .col-sm-12.my-4
+              div(class="btn-group" role="group" aria-label="Basic example")
+                button(type="button" class="btn  my-1") الشحن والتوصيل الى موقعك
+                button(type="button" class="btn mx-1 my-1") الشحن والتوصيل الى موقعك
+                button(type="button" class="btn my-1") خدماتنا            
+
+    // End Header
+    |
+    |
+    //Start section products
+    section.products
+      // containar Bootstrap 4
+      .container
+        .row
+          // grid system Bootstrap 4
+          .col-sm-6.view
+            ul.title
+              li.btn.color-b المزيد
+              li
+                span  الأكثر مشاهدة
+                span: img(src="../image/Arrow.png", alt="")        
+          .col-sm-6.prod
+            ul.title
+              li.btn.color-b المزيد
+              li
+                span  أحدث المنتجات 
+                span: img(src="../image/Arrow.png", alt="")
+        .row.mb-5
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+        .row
+          // grid system Bootstrap 4
+          .col-sm-6.view
+            ul.title
+              li.btn.color-b المزيد
+              li
+                span  الأعلى تقيماً
+                span: img(src="../image/Arrow.png", alt="")        
+          .col-sm-6.prod
+            ul.title
+              li.btn.color-b المزيد
+              li
+                span  الأكثر طلباً
+                span: img(src="../image/Arrow.png", alt="")
+        .row
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart
+          .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+            div(class="card")|
+              // use icon fontAwesome 5
+              |
+              |
+              span.cart: i.far.fa-shopping-cart|
+              |
+              |
+              div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+              .card-body
+                p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+                ul.info
+                  li اركوبال - سيراميك
+                  li 100 جنيه
+                ul.ditlist
+                  li تفاصيل المنتج
+                  // use icon fontAwesome 5
+                  li: i.far.fa-shopping-cart                  
+    // End section products
+    |
+    |
+    //Start section status
+    section.status
+      span.circal.circal-1
+      span.circal.circal-2
+      span.circal.circal-3
+      span.circal.circal-4
+      // container Bootstrap 4
+      .container
+        .row
+          // grid system Bootstrap 4
+          .col-sm-12.col-md-6.col-lg-3.box-status.my-4
+            .cont-status.orders
+              ul
+                li 50
+                li
+                  // icon fontAwesome 5
+                  span: i.fas.fa-truck-loading
+                  span الطلبات
+          .col-sm-12.col-md-6.col-lg-3.box-status.my-4
+            .cont-status.limit
+              ul
+                li 50
+                li
+                  // icon fontAwesome 5
+                  span: i.fas.fa-star
+                  span التقييمات
+          .col-sm-12.col-md-6.col-lg-3.box-status.my-4
+            .cont-status.item
+              ul
+                li 500
+                li
+                  // icon fontAwesome 5
+                  span: i.fab.fa-product-hunt
+                  span المنتجات
+          .col-sm-12.col-md-6.col-lg-3.box-status.my-4
+            .cont-status.users
+              ul
+                li 100
+                li
+                  // icon fontAwesome 5
+                  span: i.fas.fa-users
+                  span المستخدمين
+    //End section status
+    |
+    |
+    // Start footer
+    footer
+      // container Bootstrap 4
+      .container
+        .row
+          // grid system Bootstrap 4
+          .col-sm-12.col-md-6.loation.mb-5
+            .loc
+              // icon fontAwesome 5
+              span: i.far.fa-arrow-right
+              span  الشروق للأدوات المنزلية - المنيا
+              // use Embed Google Map
+            <div style="overflow:hidden;width: auto;position: relative;"><iframe width="100%" height="400" src="https://maps.google.com/maps?hl=en&amp;q=الشروق للأدوات المنزلية - المنيا+()&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://googlemapsembed.net/">Embed Google Map</a> </small></div><style>.nvs{position:relative;text-align:right;height:325px;width:643px;} #gmap_canvas img{max-width:none!important;background:none!important}</style></div>         
+          .col-sm-12.col-md-6.contact-us
+            ul
+              li الروابط المختصره
+              li
+              li: a(href='#')  الاسئلة الشائعة
+              li: a(href='#')  حسابي
+              li: a(href='#')  انشاء حساب جديد
+            ul
+              li التواصل معنا
+              li
+              li: a(href='#')  (+02) 01030222791
+              li: a(href='#')  abuklod@yahoo.com
+              li: a(href='#')  المنيا - دمشير
+          .col-sm-12.copy-right
+            ul
+              li Copyright 2020 4SOFT. All rights reserved
+              li الشروط والأحكام
+    // End footer
     script(src = '../file.js/popper.js')
     script(src = '../file.js/jquery-3.3.1.min.js')
     script(src = '../file.js/bootstrap.min.js')

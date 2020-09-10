@@ -1,0 +1,113 @@
+/*Start footer*/
+footer {
+    margin-top: 25px;
+    padding: 45px 0px 20px 0px;
+    /* use var sass */
+    background-color: $color-r;
+    .loation {
+        position: relative;
+        .loc {
+            top: 10px;
+            z-index: 1;
+            right: 25px;
+            padding: 15px;
+            position: absolute;
+            /* use var sass */
+            background-color: $color-b;
+            span {
+                &:first-of-type {
+                    /* use var sass */
+                    color: $color-b;
+                    padding: 5px 15px;
+                    margin-right: 40px;                    
+                    background-color: #fff;
+                }
+                &:last-of-type {
+                    color: #ffff;
+                    font-size: 14px;
+                    font-weight: 600;                    
+                }
+            }
+        }
+    }
+    .contact-us {
+        /* use flex box */
+        display: flex;
+        justify-content: flex-end;
+        ul {
+            width: 100%;
+            list-style: none;
+            padding: 0px 25px;
+            text-align: right;
+            &:last-of-type  li {
+                &:nth-of-type(3)::after {
+                    content: '\f098'; 
+                } 
+                &:nth-of-type(4)::after {
+                    content: '\f1fa'; 
+                }                                 
+                &:last-of-type::after {
+                    content: '\f3c5'; 
+                }                 
+                &:not(:nth-of-type(2)):not(:first-of-type) {
+                    &::after {
+                        font-weight: 500;
+                        margin-left: 11px;
+                        /* use lib fontAwesome 5 */
+                        font-family: "Font Awesome 5 Pro"; 
+                    }
+                    margin: 20px 0;
+                }
+               
+            }
+            &:first-of-type  li {                
+                &:not(:nth-of-type(2)):not(:first-of-type) {
+                    margin: 20px 0;
+                }
+               
+            }            
+            li {
+                color: #fff;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+                &:first-of-type {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                &:nth-of-type(2) {
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    position: relative;
+                    margin: 20px 0 50px 0;
+                    &::after {
+                        top: 0;
+                        right: 0;
+                        content: '';
+                        width: 35px;
+                        height: 100%;
+                        position: absolute;
+                        background: black;
+                    }                   
+                }
+            }
+        }
+    }
+    .copy-right ul {
+        padding: 0;
+        /* use flex box */
+        display: flex;
+        margin-bottom: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+}
+/*End footer*/

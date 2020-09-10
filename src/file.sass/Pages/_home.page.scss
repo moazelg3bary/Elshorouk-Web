@@ -1,0 +1,196 @@
+/* start section products */
+.products {
+    margin: 75px 0;
+    .title {
+        padding: 0;
+        /* use flex box */
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li {
+            font-weight: bold;
+            &:first-of-type {
+                color: #fff;
+                /* use var sass */
+                background-color: $color-b;
+            }
+            span {
+                font-size: 20px;
+                margin-left: 5px;
+                vertical-align: middle;                
+            }
+        }
+    }
+    .prodect {
+        .card {
+            border: none;
+            cursor: pointer;
+            .cart {
+                top: 10px;
+                z-index: 1;
+                right: 10px;                
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                text-align: center;
+                background-color: #fff;
+                /* use mixin sass */
+                @include browser(border-radius, 50%, o ms moz webkit);
+                @include browser(box-shadow, 1px 1px 7px -1px #999393a8, o ms moz webkit);
+                i {
+                    color: $color-r;
+                    line-height: 35px;
+                }
+            }
+        }
+        .cont-img {
+            overflow: hidden;
+            position: relative;
+            /* use mixin sass */
+            @include browser(border-radius, 0.25rem, o ms moz webkit);
+            &:hover  {
+                &::after {
+                    opacity: .5;
+                }
+            }
+            &::after {
+                top: 0;
+                left: 0;
+                opacity: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-image: linear-gradient(227deg, #E12020, #274B96);
+                /* use mixin sass */
+                @include browser(transition, opacity .5s ease-in-out, o ms moz webkit);
+            }
+        }
+        .card-body {
+            padding: 0;
+            .card-text {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                /* use flex box */
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: space-between;
+                &.info {
+                    margin-bottom: 15px;
+                    li {
+                        &:first-of-type {
+                            font-size: 11px;
+                        }
+                        &:last-of-type {
+                            /* use var sass */
+                            color: $color-r;                        
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }                    
+                }
+                &.ditlist li {
+                    color: #fff;
+                    &:first-of-type {
+                        font-weight: 400;                        
+                        padding: 10px 55px;
+                        /* use var sass */
+                        background: $color-b;
+                    }
+                    &:last-of-type {
+                        padding: 10px 15px;
+                        /* use var sass */
+                        background-color: $color-r;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End section products */
+
+/* Start section status */
+.status {
+    padding: 65px 0;
+    overflow: hidden;
+    position: relative;
+    /* use var sass */
+    background-color: $color-bk;
+    .circal {
+        top: -125px;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #ffffff0a;
+        &.circal-1 {
+            left: -35px;
+        }
+        &.circal-2 {
+            left: 320px;
+        }
+        &.circal-3 {
+            right: 320px;
+        }
+        &.circal-4 {
+            right: -35px;
+        }                        
+    }
+    .box-status {
+        .cont-status {
+            cursor: pointer;
+            /* use mixin sass */
+            @include browser(border-radius, 15px, o ms moz webkit);
+            &.orders {
+                /* use var sass */
+                background-color: $color-rm;
+            }
+            &.limit {
+                /* use var sass */
+                background-color: $color-b;
+            }
+            &.item {
+                /* use var sass */
+                background-color: $color-r;
+            }
+            &.users {
+                /* use var sass */
+                background-color: $color-g;
+            }                                    
+            ul {
+                margin: 0;
+                display: flex;
+                list-style: none;
+                font-weight: bold;
+                padding: 10px 20px;
+                /* use flex box */
+                align-items: center;
+                justify-content: space-between;
+                li {
+                    color: #fff;
+                    &:first-of-type {
+                        font-size: 45px;   
+                    }
+                    &:last-of-type {
+                        text-align: center;
+                        span {
+                            display: block;
+                            &:first-of-type {
+                                font-size: 40px;
+                            }
+                            &:last-of-type {
+                                font-size: 13px;
+                            }
+                        }
+                    }                 
+                }
+            }
+        }
+    }
+}
+/* End section status */

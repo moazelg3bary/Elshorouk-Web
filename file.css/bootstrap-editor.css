@@ -1,0 +1,14 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+.navbar-light .navbar-toggler span i {
+    font-size: 30px;
+}
+.navbar-light .navbar-brand {
+    padding: 5px;
+    background-color: #fff;
+}
