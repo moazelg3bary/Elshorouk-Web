@@ -1,0 +1,33 @@
+/*Start Globale classes ar style*/
+.txt-right {
+    text-align: right !important
+}
+.dir-right {
+    direction: rtl !important
+}
+.dir-left {
+    direction: ltr !important
+}
+
+/*start class flex-box & prevfix*/
+.d-fx {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+.fx-row-r {
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+/*End Globale classes ar style*/
+
+/*Glovale style element*/
+/* ul {
+    padding-right: 0;
+} */
+
