@@ -429,4 +429,20 @@
 /* End style page product */
 /**/
 
+/* Start style page products */
+// ------
+/* Start section .load-more */
+.load-more button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 60px;    
+    background-color: $color-b;
+    @include browser(border-radius, 22px, o ms moz webkit);
+}
+/* End section .load-more */
+// ------
+/* End style page products */
+/**/
+
 

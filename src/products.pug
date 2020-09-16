@@ -2,7 +2,7 @@
 extends index.pug
 
 block TitlePage
-	title Prodect
+	title Prodects
 
 block Header
 	header
@@ -43,93 +43,17 @@ block contentPage
 		// use container Bootstrap 4
 		.container
 			// use breadcrumb Bootstrap 4
-			nav.my-5.dir-right.text-right(aria-label="breadcrumb")
+			nav.mb-3.mt-5.dir-right.text-right(aria-label="breadcrumb")
 				ol.breadcrumb
 					li.breadcrumb-item: a(href="#"): i.fab.fa-product-hunt
-					li.breadcrumb-item: a(href="#") أجهزة_كهربائية
-					li.breadcrumb-item.active(aria-current="page") خلاط جراندي (أسود/أبيض) 3 × 1
+					li.breadcrumb-item.active(aria-current="page") جميع المنتجات
 	// End section path
 	|
 	|
-	// Start section view-product
-	section.view-product
-		// use container Bootstrap 4
-		.container
-			// use grid system Bootstrap 4
-			.row.dir-right.text-right.my-5
-				.col-sm-12.col-md-6.view.my-4
-					.col-sm-12.p-0.dis: p طقم كنكة قهوة تركي ستانلس ستيل مع مقابض ستانلس ستيل من زهران 0330013630- فضي، 3 قطع
-					.col-sm-12.p-0.section
-						ul
-							li القسم: #[span أجهزة كهربائية]
-							li -
-							li التقييم: #[span 8/10]
-				.col-sm-12.col-md-6.some-details.my-4
-					.col-sm-12.p-0.price
-						span 250.00
-						span جنية
-					.col-sm-12.p-0.delivery.my-3: p الأسعار تشمل ضريبة القيمة المضافة <br> مشمولة في الشحن المجاني على طلبات أكثر من 350.00 جنيه
-				.col-sm-12.col-md-7.col-lg-6.mb-4.view-img
-					.col-sm-12.p-0
-						.cont-img
-							img(src="../image/NoPath.png", alt="")
-					.col-sm-12.p-0.slid-item.mt-3
-						ul
-							li
-								img(src="../image/NoPath.png", alt="")
-							li
-								img(src="../image/NoPath.png", alt="")
-							li
-								img(src="../image/NoPath.png", alt="")
-							li.active
-								img(src="../image/NoPath.png", alt="")
-				.col-sm-12.col-md-5.col-lg-6
-					.col-sm-12.mb-4.more-details
-						h4 تفاصيل المنتج
-						.line
-					.col-sm-12.p-0.info
-						ul
-							li ستنلس ستيل 18/10
-							li قاعدة ثلاثية سميكة لضمان توزيع الحرارة بالتساوي
-							li طقم 3 قطع
-							li لمقاس: #[span 3,2,5]
-					.col-sm-12.order.p-0.my-4
-						ul
-							li: button.btn اضف الى عربة التسوق
-							li: button.btn: i.fas.fa-shopping-cart
-							li تقييم المنتج : 
-								span 
-									// icon fontAwesome 5
-									i.fal.fa-star
-									i.fal.fa-star
-									i.fal.fa-star
-									i.fal.fa-star
-									i.fal.fa-star
-					.col-sm-12.media.p-0.mt-5
-						ul.text-center.text-sm-right
-							// icon fontAwesome 5
-							li.d-block.d-sm-inline-block.d-md-block.d-lg-inline-block المشاركة عبر : 
-							li: i.fab.fa-facebook-square
-							li: i.fab.fa-instagram
-							li: i.fab.fa-twitter
-							li: i.fab.fa-youtube
-							li: i.fab.fa-snapchat-square
-							li: i.fab.fa-linkedin
-	// End section view-product
-	|
-	|
 	//Start section products
-	section.products
+	section.products.m-0
 		// containar Bootstrap 4
 		.container
-			.row
-				// grid system Bootstrap 4      
-				.col-sm-12.prod
-					ul.title.justify-content-end
-						li.btn.color-b.d-none المزيد
-						li
-							span  الأكثر طلباً 
-							span: img(src="../image/Arrow.png", alt="")
 			.row.mb-5
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
@@ -204,13 +128,78 @@ block contentPage
 								// use icon fontAwesome 5
 								li: i.far.fa-shopping-cart
 			.row
-				// grid system Bootstrap 4
-				.col-sm-12.prod
-					ul.title.justify-content-end
-						li.btn.color-b.d-none المزيد
-						li
-							span  أحدث المنتجات
-							span: img(src="../image/Arrow.png", alt="")
+				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+					div(class="card")|
+						// use icon fontAwesome 5
+						|
+						|
+						span.cart: i.far.fa-shopping-cart|
+						|
+						|
+						div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+						.card-body
+							p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+							ul.info
+								li اركوبال - سيراميك
+								li 100 جنيه
+							ul.ditlist
+								li تفاصيل المنتج
+								// use icon fontAwesome 5
+								li: i.far.fa-shopping-cart
+				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+					div(class="card")|
+						// use icon fontAwesome 5
+						|
+						|
+						span.cart: i.far.fa-shopping-cart|
+						|
+						|
+						div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+						.card-body
+							p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+							ul.info
+								li اركوبال - سيراميك
+								li 100 جنيه
+							ul.ditlist
+								li تفاصيل المنتج
+								// use icon fontAwesome 5
+								li: i.far.fa-shopping-cart
+				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+					div(class="card")|
+						// use icon fontAwesome 5
+						|
+						|
+						span.cart: i.far.fa-shopping-cart|
+						|
+						|
+						div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+						.card-body
+							p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+							ul.info
+								li اركوبال - سيراميك
+								li 100 جنيه
+							ul.ditlist
+								li تفاصيل المنتج
+								// use icon fontAwesome 5
+								li: i.far.fa-shopping-cart
+				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
+					div(class="card")|
+						// use icon fontAwesome 5
+						|
+						|
+						span.cart: i.far.fa-shopping-cart|
+						|
+						|
+						div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
+						.card-body
+							p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك
+							ul.info
+								li اركوبال - سيراميك
+								li 100 جنيه
+							ul.ditlist
+								li تفاصيل المنتج
+								// use icon fontAwesome 5
+								li: i.far.fa-shopping-carts
 			.row
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
@@ -276,12 +265,21 @@ block contentPage
 						|
 						div.cont-img: img(src="../image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
 						.card-body
-							p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
+							p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك
 							ul.info
 								li اركوبال - سيراميك
 								li 100 جنيه
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart                  
-	// End section products		
+								li: i.far.fa-shopping-carts
+	// End section products
+	|
+	|
+	// Start section load-more
+	section.load-more.mb-5
+		.container
+			.row.text-center.py-5
+				.col-sm-12
+					button.btn تحميل المزيد
+	// End section load-more

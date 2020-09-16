@@ -497,6 +497,24 @@ header.home .info .btn-group button:nth-of-type(2) {
 /* end section view-product */
 /* End style page product */
 /**/
+/* Start style page products */
+/* Start section .load-more */
+.load-more button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 60px;
+  background-color: #2A509F;
+  border-radius: 22px;
+  -o-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+}
+
+/* End section .load-more */
+/* End style page products */
+/**/
 /*Start footer*/
 footer {
   margin-top: 25px;
