@@ -1,10 +1,4 @@
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-}
-.navbar-light .navbar-toggler {
-    color: #fff;
-    border-color: #fff;
-}
+/* Globle in all page */
 .navbar-light .navbar-toggler span i {
     font-size: 30px;
 }
@@ -12,3 +6,30 @@
     padding: 5px;
     background-color: #fff;
 }
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0;
+    padding-left: 0.5rem;
+}
+
+/* in page home */
+.navbar-light.home .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light.home .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* in page product */
+.navbar-light.product .navbar-nav .nav-link {
+    color: #2A509F;
+}
+.navbar-light.product .navbar-toggler {
+    color: #2A509F;
+    border-color: #2A509F;
+}
+

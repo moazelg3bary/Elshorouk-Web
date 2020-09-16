@@ -9,25 +9,27 @@
     }
 }
 header {
-    padding-bottom: 80px;
-    background: url(../../../image/Component-1.png) no-repeat -248.86px -355.11px;
-    .info {
-        padding: 40px 0;
-        .text p {
-            line-height: 25px;
-            font-weight: 600;
-        }
-        .btn-group button {
-            font-weight: bold;
-            border-radius: 25px;
-            padding: 10px 15px;             
-            background-color: #F7F7F7;
-            &:first-of-type {
-                color: $color-b;
+        &.home {
+        padding-bottom: 80px;
+        background: url(../../../image/Component-1.png) no-repeat -248.86px -355.11px;
+        .info {
+            padding: 40px 0;
+            .text p {
+                line-height: 25px;
+                font-weight: 600;
             }
-            &:nth-of-type(2) {
-                color: $color-g;
-            }            
+            .btn-group button {
+                font-weight: bold;
+                border-radius: 25px;
+                padding: 10px 15px;             
+                background-color: #F7F7F7;
+                &:first-of-type {
+                    color: $color-b;
+                }
+                &:nth-of-type(2) {
+                    color: $color-g;
+                }            
+            }
         }
     }
 }

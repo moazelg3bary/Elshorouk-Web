@@ -5,7 +5,8 @@ html(lang = 'en')
     meta(http-equiv = "X-UA-Compatible", content = "iE=edge")
     meta(name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-    title Elshorouk Web
+    block TitlePage
+      title Elshorouk Web
     link(rel=rel='stylesheet' href = 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap')
     link(rel = 'stylesheet', href = '../file.css/bootstrap.css')
     link(rel = 'stylesheet', href = '../file.css/bootstrap-editor.css')
@@ -35,49 +36,49 @@ html(lang = 'en')
             span المنيا - دمشير 
             // use icon fontAwesome 5
             i.fal.fa-map-marker-alt
-    header
-      // use navbar Bootstrp 4
-      nav(class="navbar navbar-expand-lg navbar-light dir-right")
-        // container Bootstrap 4
-        .container
-          a(class="navbar-brand m-0" href="#"): img(src="../image/logo.png" width="53" height="68" alt="" loading="lazy")
-          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-            span: i.far.fa-bars
-          div(class="collapse navbar-collapse" id="navbarSupportedContent")
-            ul(class="navbar-nav mr-auto")
-              li(class="nav-item")
-                // use icon fontAwesome 5
-                a(class="nav-link" href="#") #[i.far.fa-address-card.mx-1] تواصل معنا 
-              li(class="nav-item")
-                // use icon fontAwesome 5
-                a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1] الأسئلة الشائعة
-              li(class="nav-item dropdown")
-                // use icon fontAwesome 5
-                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-sign-in-alt.mx-1] تسجيل الدخول
-                div( class="dropdown-menu" aria-labelledby="navbarDropdown")
-                  a(class="dropdown-item" href="#") Action
-                  a(class="dropdown-item" href="#") Another action
-                  div(class="dropdown-divider")
-                  a(class="dropdown-item" href="#") Something else here
-              li(class="nav-item")
-                // use icon fontAwesome 5
-                a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
-              li(class="nav-item")
-                // use icon fontAwesome 5
-                a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
-      .info
-        .container
-          .row.text-right
-            .col-sm-12.col-md-12.col-lg-6.el-hide
-            .col-sm-12.col-md-12.col-lg-6.text.mt-4
-              p شركة الشروق للتجارة والتوزيع شركة استثمار خاصة , تم انشاء موقع شركة الشروق للتجارة والتوزيع ليكون أكبر موقع تسوق إلكتروني لأدوات المنزل في مصر والشرق الأوسط. إذا كنت تبحث عن علب الطعام، أدوات الطبخ، لانش بوكس، أدوات شرب، أدوات زجاجية، أدوات خبز وغيرها فإن موقع شركة الشروق للتجارة والتوزيع هو المكان الأمثل لتجد فيه ما تريد، فجميع مع تريد لبيتك ستجده في موقع واحد. جميع المنتجات المعروضة على الموقع أصلية وذات جودة عالية.
-              p نحن موزع معتمد للعديد من العلامات التجارية الشهيرة، مثل الهلال والنجمة ولمسة وماكس كما يوفر الموقع أفضل الأسعار لأفضل المنتجاتمهمتنا هي توفير تجربة تسوق مميزة للعميل عن طريق توفير منتجات جديدة ومتنوعة، ونقوم بتوصيل كل طلباتكم حتى باب منزلكم , وطرق الدفع كثيرة ومنها الدفع عند الإستلام رؤيتنا هي أن نكون الموقع رقم واحد لبيع أدوات المنزل في الشرق الأوسط
-            .col-sm-12.my-4
-              div(class="btn-group" role="group" aria-label="Basic example")
-                button(type="button" class="btn  my-1") الشحن والتوصيل الى موقعك
-                button(type="button" class="btn mx-1 my-1") الشحن والتوصيل الى موقعك
-                button(type="button" class="btn my-1") خدماتنا            
-
+    block Header
+      header.home
+        // use navbar Bootstrp 4
+        nav(class="navbar navbar-expand-lg navbar-light home dir-right pt-4")
+          // container Bootstrap 4
+          .container
+            a(class="navbar-brand m-0" href="./index.html"): img(src="../image/logo.png" width="53" height="68" alt="" loading="lazy")
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+              span: i.far.fa-bars
+            div(class="collapse navbar-collapse" id="navbarSupportedContent")
+              ul(class="navbar-nav mr-auto")
+                li(class="nav-item")
+                  // use icon fontAwesome 5
+                  a(class="nav-link" href="#") #[i.far.fa-address-card.mx-1] تواصل معنا 
+                li(class="nav-item")
+                  // use icon fontAwesome 5
+                  a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1] الأسئلة الشائعة
+                li(class="nav-item dropdown")
+                  // use icon fontAwesome 5
+                  a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-sign-in-alt.mx-1] تسجيل الدخول
+                  div( class="dropdown-menu" aria-labelledby="navbarDropdown")
+                    a(class="dropdown-item" href="#") Action
+                    a(class="dropdown-item" href="#") Another action
+                    div(class="dropdown-divider")
+                    a(class="dropdown-item" href="#") Something else here
+                li(class="nav-item")
+                  // use icon fontAwesome 5
+                  a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+                li(class="nav-item")
+                  // use icon fontAwesome 5
+                  a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+        .info
+          .container
+            .row.text-right
+              .col-sm-12.col-md-12.col-lg-6.el-hide
+              .col-sm-12.col-md-12.col-lg-6.text.mt-4
+                p شركة الشروق للتجارة والتوزيع شركة استثمار خاصة , تم انشاء موقع شركة الشروق للتجارة والتوزيع ليكون أكبر موقع تسوق إلكتروني لأدوات المنزل في مصر والشرق الأوسط. إذا كنت تبحث عن علب الطعام، أدوات الطبخ، لانش بوكس، أدوات شرب، أدوات زجاجية، أدوات خبز وغيرها فإن موقع شركة الشروق للتجارة والتوزيع هو المكان الأمثل لتجد فيه ما تريد، فجميع مع تريد لبيتك ستجده في موقع واحد. جميع المنتجات المعروضة على الموقع أصلية وذات جودة عالية.
+                p نحن موزع معتمد للعديد من العلامات التجارية الشهيرة، مثل الهلال والنجمة ولمسة وماكس كما يوفر الموقع أفضل الأسعار لأفضل المنتجاتمهمتنا هي توفير تجربة تسوق مميزة للعميل عن طريق توفير منتجات جديدة ومتنوعة، ونقوم بتوصيل كل طلباتكم حتى باب منزلكم , وطرق الدفع كثيرة ومنها الدفع عند الإستلام رؤيتنا هي أن نكون الموقع رقم واحد لبيع أدوات المنزل في الشرق الأوسط
+              .col-sm-12.my-4
+                div(class="btn-group" role="group" aria-label="Basic example")
+                  button(type="button" class="btn  my-1") الشحن والتوصيل الى موقعك
+                  button(type="button" class="btn mx-1 my-1") الشحن والتوصيل الى موقعك
+                  button(type="button" class="btn my-1") خدماتنا 
     // End Header
     |
     |

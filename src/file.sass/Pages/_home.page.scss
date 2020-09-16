@@ -71,6 +71,7 @@
             .card-text {
                 font-size: 13px;
                 font-weight: 600;
+                margin-top: 10px;
             }
             ul {
                 margin: 0;
@@ -194,3 +195,216 @@
     }
 }
 /* End section status */
+/**/
+/* Start style page product */
+// ------
+/* start section path */
+.path .breadcrumb{
+    @include browser(border-radius, 35px, o ms moz webkit);
+}
+/* end section path */
+
+/* start section view-product */
+.view-product {
+    .view {
+        .dis {
+            p {
+                font-size: 22px;
+                color: $color-t-b;
+            }
+        }
+        .section {
+            ul {
+                padding: 0;
+                list-style: none;
+                li {
+                    font-size: 16px;
+                    font-weight: 300;                    
+                    color: $color-t-sg;
+                    display: inline-block;
+                    &:not(:nth-of-type(2)) span {
+                        margin-right: 2px;
+                    }
+                    &:nth-of-type(2) {
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+    .view-img .cont-img {
+        padding: 5px;
+        background-color: #fff;
+        border: 1px solid $color-Bg;
+        @include browser(box-shadow, 0px 1px 4px -3px #a89e9e, o ms moz webkit);
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    .slid-item ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li {
+            padding: 0 5px;
+            background-color: #fff;
+            border: 1px solid $color-Bg;
+            @include browser(box-shadow, 0px 1px 4px -3px #a89e9e, o ms moz webkit);
+            &:not(:first-of-type):not(:last-of-type) {
+                margin: 0 10px;
+            }
+            &.active {
+                border: 3px solid $color-b;
+            }
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .some-details {
+        .price span {
+            &:first-of-type {
+                color: $color-r;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            &:last-of-type {
+                font-size: 17px;
+                font-weight: 600;
+                margin-right: 5px;
+                color: $color-t-b;
+            }
+        }
+        .delivery p {
+            font-size: 13px;
+            font-weight: 300;
+            color: $color-rm;
+            line-height: 30px;
+        }
+    }
+    .more-details {
+        display: flex;
+        padding: 24px 0;
+        position: relative;
+        align-items: center;
+        &::after, &::before {
+            left: 0;
+            content: '';
+            height: 1.3px;
+            width: 100%;
+            position: absolute;
+            background-color: $color-Bg;                
+        }
+        &::after {
+            bottom: 0;
+        }
+        &::before {
+            top: 0;
+        }            
+        h4 {
+            font-size: 18px;
+            color: $color-b;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .line {
+            width: 84px;
+            height: 1.3px;
+            margin-top: 4px;
+            margin-right: 20px;
+            background: $color-b;
+        }
+    }
+    .info ul {
+        padding-right: 20px;
+        list-style-type: circle;
+        li {
+            font-size: 14px;
+            font-weight: 400;            
+            color: $color-rm;                
+            &:not(:last-of-type) {
+            margin-bottom: 9px;
+            }
+            &:last-of-type span {
+                margin-right: 2px;                    
+            }
+        }
+    }
+    .order ul {
+        padding-right: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-bottom: 10px;
+            &:not(:last-of-type) {
+                margin-left: 10px;
+            }
+            &:first-of-type button {
+                padding: 10px 35px;                
+                background-color: $color-b;
+                @include browser(border-radius, 22px, o ms moz webkit);
+                @include browser(box-shadow, 1px 2px 5px 0px #00000052, o ms moz webkit);            
+            }
+            &:nth-of-type(2) button {
+                padding: 10px 20px;
+                background-color: $color-r;
+                @include browser(border-radius, 22px, o ms moz webkit);
+                i {
+                    vertical-align: middle;
+                }
+            }
+            &:last-of-type {
+                font-size: 14px;
+                font-weight: bold;
+                span {
+                    margin-right: 12px;
+                    i {
+                        vertical-align: middle;
+                        &:not(:last-of-type) {
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+            button {
+                color: #fff;
+                font-size: 13px;
+                font-weight: 400;
+            }            
+        }
+    }
+    .media ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        li {
+            color: $color-b;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            &:first-of-type {
+                font-size: 14px;
+            }
+            &:not(:last-of-type) {
+                margin-left: 25px;
+            }
+            i {
+                font-size: 25px;
+                vertical-align: middle;
+            }
+        }
+    }   
+}
+
+/* end section view-product */
+// ------
+/* End style page product */
+/**/
+
+
