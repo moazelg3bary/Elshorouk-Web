@@ -258,6 +258,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 /* Start style page product */
 /* start section path */
 .path .breadcrumb {
+  /* use mixin sass */
   border-radius: 35px;
   -o-border-radius: 35px;
   -ms-border-radius: 35px;
@@ -269,6 +270,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 /* start section view-product */
 .view-product .view .dis p {
   font-size: 22px;
+  /* use var sass */
   color: #0056FF;
 }
 .view-product .view .section ul {
@@ -278,6 +280,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 .view-product .view .section ul li {
   font-size: 16px;
   font-weight: 300;
+  /* use var sass */
   color: #939393;
   display: inline-block;
 }
@@ -290,7 +293,9 @@ header.home .info .btn-group button:nth-of-type(2) {
 .view-product .view-img .cont-img {
   padding: 5px;
   background-color: #fff;
+  /* use var sass */
   border: 1px solid #EFEFEF;
+  /* use mixin sass */
   box-shadow: 0px 1px 4px -3px #a89e9e;
   -o-box-shadow: 0px 1px 4px -3px #a89e9e;
   -ms-box-shadow: 0px 1px 4px -3px #a89e9e;
@@ -304,6 +309,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 }
 .view-product .slid-item ul {
   padding: 0;
+  /* use flex box */
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -311,7 +317,9 @@ header.home .info .btn-group button:nth-of-type(2) {
 .view-product .slid-item ul li {
   padding: 0 5px;
   background-color: #fff;
+  /* use var sass */
   border: 1px solid #EFEFEF;
+  /* use mixin sass */
   box-shadow: 0px 1px 4px -3px #a89e9e;
   -o-box-shadow: 0px 1px 4px -3px #a89e9e;
   -ms-box-shadow: 0px 1px 4px -3px #a89e9e;
@@ -322,6 +330,7 @@ header.home .info .btn-group button:nth-of-type(2) {
   margin: 0 10px;
 }
 .view-product .slid-item ul li.active {
+  /* use var sass */
   border: 3px solid #2A509F;
 }
 .view-product .slid-item ul li img {
@@ -329,6 +338,7 @@ header.home .info .btn-group button:nth-of-type(2) {
   max-width: 100%;
 }
 .view-product .some-details .price span:first-of-type {
+  /* use var sass */
   color: #E12029;
   font-size: 22px;
   font-weight: bold;
@@ -337,15 +347,18 @@ header.home .info .btn-group button:nth-of-type(2) {
   font-size: 17px;
   font-weight: 600;
   margin-right: 5px;
+  /* use var sass */
   color: #0056FF;
 }
 .view-product .some-details .delivery p {
   font-size: 13px;
   font-weight: 300;
+  /* use var sass */
   color: #747474;
   line-height: 30px;
 }
 .view-product .more-details {
+  /* use flex box */
   display: flex;
   padding: 24px 0;
   position: relative;
@@ -357,6 +370,7 @@ header.home .info .btn-group button:nth-of-type(2) {
   height: 1.3px;
   width: 100%;
   position: absolute;
+  /* use var sass */
   background-color: #EFEFEF;
 }
 .view-product .more-details::after {
@@ -367,6 +381,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 }
 .view-product .more-details h4 {
   font-size: 18px;
+  /* use var sass */
   color: #2A509F;
   margin-bottom: 0;
   font-weight: bold;
@@ -376,6 +391,7 @@ header.home .info .btn-group button:nth-of-type(2) {
   height: 1.3px;
   margin-top: 4px;
   margin-right: 20px;
+  /* use var sass */
   background: #2A509F;
 }
 .view-product .info ul {
@@ -385,6 +401,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 .view-product .info ul li {
   font-size: 14px;
   font-weight: 400;
+  /* use var sass */
   color: #747474;
 }
 .view-product .info ul li:not(:last-of-type) {
@@ -406,7 +423,9 @@ header.home .info .btn-group button:nth-of-type(2) {
 }
 .view-product .order ul li:first-of-type button {
   padding: 10px 35px;
+  /* use var sass */
   background-color: #2A509F;
+  /* use mixin sass */
   border-radius: 22px;
   -o-border-radius: 22px;
   -ms-border-radius: 22px;
@@ -420,7 +439,9 @@ header.home .info .btn-group button:nth-of-type(2) {
 }
 .view-product .order ul li:nth-of-type(2) button {
   padding: 10px 20px;
+  /* use var sass */
   background-color: #E12029;
+  /* use mixin sass */
   border-radius: 22px;
   -o-border-radius: 22px;
   -ms-border-radius: 22px;
@@ -455,6 +476,7 @@ header.home .info .btn-group button:nth-of-type(2) {
   list-style: none;
 }
 .view-product .media ul li {
+  /* use var sass */
   color: #2A509F;
   cursor: pointer;
   margin-bottom: 10px;

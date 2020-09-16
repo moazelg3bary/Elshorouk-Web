@@ -200,6 +200,7 @@
 // ------
 /* start section path */
 .path .breadcrumb{
+    /* use mixin sass */
     @include browser(border-radius, 35px, o ms moz webkit);
 }
 /* end section path */
@@ -210,6 +211,7 @@
         .dis {
             p {
                 font-size: 22px;
+                /* use var sass */
                 color: $color-t-b;
             }
         }
@@ -219,7 +221,8 @@
                 list-style: none;
                 li {
                     font-size: 16px;
-                    font-weight: 300;                    
+                    font-weight: 300;
+                    /* use var sass */
                     color: $color-t-sg;
                     display: inline-block;
                     &:not(:nth-of-type(2)) span {
@@ -235,7 +238,9 @@
     .view-img .cont-img {
         padding: 5px;
         background-color: #fff;
+        /* use var sass */
         border: 1px solid $color-Bg;
+        /* use mixin sass */
         @include browser(box-shadow, 0px 1px 4px -3px #a89e9e, o ms moz webkit);
         img {
             width: 100%;
@@ -245,18 +250,22 @@
     }
     .slid-item ul {
         padding: 0;
+        /* use flex box */
         display: flex;
         list-style: none;
         justify-content: space-between;
         li {
             padding: 0 5px;
             background-color: #fff;
+            /* use var sass */
             border: 1px solid $color-Bg;
+            /* use mixin sass */
             @include browser(box-shadow, 0px 1px 4px -3px #a89e9e, o ms moz webkit);
             &:not(:first-of-type):not(:last-of-type) {
                 margin: 0 10px;
             }
             &.active {
+                /* use var sass */
                 border: 3px solid $color-b;
             }
             img {
@@ -268,6 +277,7 @@
     .some-details {
         .price span {
             &:first-of-type {
+                /* use var sass */
                 color: $color-r;
                 font-size: 22px;
                 font-weight: bold;
@@ -276,17 +286,20 @@
                 font-size: 17px;
                 font-weight: 600;
                 margin-right: 5px;
+                /* use var sass */
                 color: $color-t-b;
             }
         }
         .delivery p {
             font-size: 13px;
             font-weight: 300;
+            /* use var sass */
             color: $color-rm;
             line-height: 30px;
         }
     }
     .more-details {
+        /* use flex box */
         display: flex;
         padding: 24px 0;
         position: relative;
@@ -297,6 +310,7 @@
             height: 1.3px;
             width: 100%;
             position: absolute;
+            /* use var sass */
             background-color: $color-Bg;                
         }
         &::after {
@@ -307,6 +321,7 @@
         }            
         h4 {
             font-size: 18px;
+            /* use var sass */
             color: $color-b;
             margin-bottom: 0;
             font-weight: bold;
@@ -316,6 +331,7 @@
             height: 1.3px;
             margin-top: 4px;
             margin-right: 20px;
+            /* use var sass */
             background: $color-b;
         }
     }
@@ -324,7 +340,8 @@
         list-style-type: circle;
         li {
             font-size: 14px;
-            font-weight: 400;            
+            font-weight: 400; 
+            /* use var sass */           
             color: $color-rm;                
             &:not(:last-of-type) {
             margin-bottom: 9px;
@@ -344,14 +361,18 @@
                 margin-left: 10px;
             }
             &:first-of-type button {
-                padding: 10px 35px;                
+                padding: 10px 35px;
+                /* use var sass */
                 background-color: $color-b;
+                /* use mixin sass */
                 @include browser(border-radius, 22px, o ms moz webkit);
                 @include browser(box-shadow, 1px 2px 5px 0px #00000052, o ms moz webkit);            
             }
             &:nth-of-type(2) button {
                 padding: 10px 20px;
+                /* use var sass */
                 background-color: $color-r;
+                /* use mixin sass */
                 @include browser(border-radius, 22px, o ms moz webkit);
                 i {
                     vertical-align: middle;
@@ -383,6 +404,7 @@
         width: 100%;
         list-style: none;
         li {
+            /* use var sass */
             color: $color-b;
             cursor: pointer;
             margin-bottom: 10px;
