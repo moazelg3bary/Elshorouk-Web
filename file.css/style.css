@@ -504,7 +504,9 @@ header.home .info .btn-group button:nth-of-type(2) {
   font-size: 14px;
   font-weight: 400;
   padding: 10px 60px;
+  /* use var sass */
   background-color: #2A509F;
+  /* use mixin sass */
   border-radius: 22px;
   -o-border-radius: 22px;
   -ms-border-radius: 22px;
@@ -514,6 +516,173 @@ header.home .info .btn-group button:nth-of-type(2) {
 
 /* End section .load-more */
 /* End style page products */
+/**/
+/* Start style page cart */
+/* Start section cart */
+.cart .row:not(:last-of-type) {
+  padding-bottom: 25px;
+  /* use var sass */
+  border-bottom: 1px solid #EFEFEF;
+}
+.cart .row:last-of-type {
+  padding: 10px 0;
+  background-color: #fff;
+  /* use mixin sass */
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moaz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: -1px 1px 5px -1px #00000024;
+  -o-box-shadow: -1px 1px 5px -1px #00000024;
+  -ms-box-shadow: -1px 1px 5px -1px #00000024;
+  -moz-box-shadow: -1px 1px 5px -1px #00000024;
+  -webkit-box-shadow: -1px 1px 5px -1px #00000024;
+}
+.cart .view-product .cont-img {
+  padding: 20px 5px;
+  /* use var sass */
+  border: 1.3px solid #EFEFEF;
+  /* use mixin sass */
+  border-radius: 11px;
+  -o-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+}
+.cart .view-product .cont-img img {
+  height: auto;
+  max-width: 100%;
+}
+.cart .details p {
+  /* use var sass */
+  color: #2A509F;
+  font-size: 22px;
+}
+.cart .details ul {
+  list-style: none;
+  padding-right: 0;
+}
+.cart .details ul li {
+  font-size: 15px;
+  font-weight: 300;
+}
+.cart .details ul li span {
+  margin: 0 5px;
+}
+.cart .details ul li:not(:last-of-type) {
+  display: inline-block;
+}
+.cart .details ul li:not(:last-of-type)::before {
+  font-size: 10px;
+  content: '\f111';
+  margin-left: 8px;
+  vertical-align: middle;
+  font-family: 'Font Awesome 5 Pro';
+}
+.cart .details ul li:first-of-type {
+  /* use var sass */
+  color: #E12029;
+}
+.cart .details ul li:nth-of-type(2) {
+  /* use var sass */
+  color: #2A509F;
+}
+.cart .details ul li:nth-of-type(2) span {
+  /* use var sass */
+  color: #E12029;
+  font-weight: bold;
+}
+.cart .details ul li:last-of-type {
+  margin-top: 15px;
+}
+.cart .details ul li:last-of-type button {
+  padding: 5px;
+  /* use var sass */
+  color: #2A509F;
+  margin-right: 5px;
+  background: #fff;
+  vertical-align: middle;
+  /* use var sass */
+  border: 1px solid #EFEFEF;
+  /* use mixin sass */
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+.cart .details ul li:last-of-type button i {
+  margin-right: 3px;
+}
+.cart .details ul li:last-of-type button span, .cart .details ul li:last-of-type button i {
+  vertical-align: middle;
+}
+.cart .state-order ul {
+  padding-right: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.cart .state-order ul li {
+  font-size: 17px;
+  font-weight: 300;
+}
+.cart .state-order ul li:first-of-type {
+  margin-bottom: 15px;
+}
+.cart .state-order ul li:first-of-type span {
+  margin: 0 1px;
+  /* use var sass */
+  color: #E12029;
+  font-weight: bold;
+}
+.cart .state-order ul li:last-of-type button {
+  font-size: 14px;
+  color: #E12029;
+  font-weight: 600;
+  background: #fff;
+  /* use var sass */
+  border: 1px solid #E12029;
+}
+.cart .state-order ul li:last-of-type button span {
+  margin-left: 5px;
+}
+.cart .more button {
+  color: #fff;
+  font-size: 13;
+  font-weight: 400;
+  padding: 5px 25px;
+  /* use var sass */
+  background-color: #2A509F;
+}
+.cart .total {
+  text-align: left;
+}
+.cart .total ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.cart .total ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart .total ul li:first-of-type {
+  margin-left: 20px;
+}
+.cart .total ul li:first-of-type span:last-of-type {
+  margin-right: 5px;
+}
+.cart .total ul li:last-of-type span {
+  /* use var sass */
+  color: #E12029;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+/* End section cart */
+/* End style page cart */
 /**/
 /*Start footer*/
 footer {
