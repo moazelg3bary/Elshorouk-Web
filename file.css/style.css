@@ -282,57 +282,57 @@ footer .loation .loc span:last-of-type {
   font-size: 14px;
   font-weight: 600;
 }
-footer .contact-us {
-  /* use flex box */
-  display: flex;
-  justify-content: flex-end;
-}
-footer .contact-us ul {
-  width: 100%;
-  list-style: none;
-  padding: 0px 25px;
-  text-align: right;
-}
-footer .contact-us ul:last-of-type li:nth-of-type(3)::after {
+footer .contact-us .contact ul li:nth-of-type(3)::after {
   content: '\f098';
 }
-footer .contact-us ul:last-of-type li:nth-of-type(4)::after {
+footer .contact-us .contact ul li:nth-of-type(4)::after {
   content: '\f1fa';
 }
-footer .contact-us ul:last-of-type li:last-of-type::after {
+footer .contact-us .contact ul li:last-of-type::after {
   content: '\f3c5';
 }
-footer .contact-us ul:last-of-type li:not(:nth-of-type(2)):not(:first-of-type) {
+footer .contact-us .contact ul li:not(:nth-of-type(2)):not(:first-of-type) {
   margin: 20px 0;
 }
-footer .contact-us ul:last-of-type li:not(:nth-of-type(2)):not(:first-of-type)::after {
+footer .contact-us .contact ul li:not(:nth-of-type(2)):not(:first-of-type)::after {
   font-weight: 500;
   margin-left: 11px;
   /* use lib fontAwesome 5 */
   font-family: "Font Awesome 5 Pro";
 }
-footer .contact-us ul:first-of-type li:not(:nth-of-type(2)):not(:first-of-type) {
+footer .contact-us .link, footer .contact-us .contact {
+  /* use flex box */
+  display: flex;
+  justify-content: flex-end;
+}
+footer .contact-us .link ul, footer .contact-us .contact ul {
+  width: 100%;
+  padding: 0 7.5px;
+  list-style: none;
+  text-align: right;
+}
+footer .contact-us .link ul li:not(:nth-of-type(2)):not(:first-of-type), footer .contact-us .contact ul li:not(:nth-of-type(2)):not(:first-of-type) {
   margin: 20px 0;
 }
-footer .contact-us ul li {
+footer .contact-us .link ul li, footer .contact-us .contact ul li {
   color: #fff;
 }
-footer .contact-us ul li a {
+footer .contact-us .link ul li a, footer .contact-us .contact ul li a {
   text-decoration: none;
   color: #fff;
 }
-footer .contact-us ul li:first-of-type {
+footer .contact-us .link ul li:first-of-type, footer .contact-us .contact ul li:first-of-type {
   font-size: 20px;
   font-weight: bold;
 }
-footer .contact-us ul li:nth-of-type(2) {
+footer .contact-us .link ul li:nth-of-type(2), footer .contact-us .contact ul li:nth-of-type(2) {
   width: 100%;
   height: 2px;
   background: #fff;
   position: relative;
   margin: 20px 0 50px 0;
 }
-footer .contact-us ul li:nth-of-type(2)::after {
+footer .contact-us .link ul li:nth-of-type(2)::after, footer .contact-us .contact ul li:nth-of-type(2)::after {
   top: 0;
   right: 0;
   content: '';
@@ -340,6 +340,20 @@ footer .contact-us ul li:nth-of-type(2)::after {
   height: 100%;
   position: absolute;
   background: black;
+}
+footer .contact-us .media ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+footer .contact-us .media ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 30px 15px 0 0;
+}
+footer .contact-us .media ul li i {
+  color: #fff;
+  font-size: 25px;
 }
 footer .copy-right ul {
   padding: 0;
@@ -352,6 +366,7 @@ footer .copy-right ul {
 }
 footer .copy-right ul li {
   color: #fff;
+  margin: 10px 0;
   font-size: 13px;
   font-weight: bold;
 }
@@ -369,7 +384,7 @@ footer .copy-right ul li {
     height: 565px;
   }
 
-  footer .contact-us {
+  footer .contact-us .link, .contact {
     flex-wrap: wrap;
   }
 }
