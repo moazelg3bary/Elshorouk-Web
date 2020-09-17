@@ -256,6 +256,7 @@
         justify-content: space-between;
         li {
             padding: 0 5px;
+            cursor: pointer;
             background-color: #fff;
             /* use var sass */
             border: 1px solid $color-Bg;

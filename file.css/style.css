@@ -385,6 +385,7 @@ header.home .info .btn-group button:nth-of-type(2) {
 }
 .view-product .slid-item ul li {
   padding: 0 5px;
+  cursor: pointer;
   background-color: #fff;
   /* use var sass */
   border: 1px solid #EFEFEF;
