@@ -1,0 +1,50 @@
+//- import from 
+extends index.pug
+
+block TitlePage
+	title Favorite order
+
+block Header
+	header
+		block Test
+		// use navbar Bootstrp 4
+		nav(class="navbar navbar-expand-lg navbar-light product pt-4 dir-right")
+			// container Bootstrap 4
+			.container
+				a(class="navbar-brand m-0" href="./index.html"): img(src="../image/logo.png" width="53" height="68" alt="" loading="lazy")
+				button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+					span: i.far.fa-bars
+				div(class="collapse navbar-collapse" id="navbarSupportedContent")
+					ul(class="navbar-nav mr-auto")
+						li(class="nav-item")
+							// use icon fontAwesome 5
+							a(class="nav-link" href="#") #[i.far.fa-address-card.mx-1] تواصل معنا 
+						li(class="nav-item")
+							// use icon fontAwesome 5
+							a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1] الأسئلة الشائعة
+						li(class="nav-item dropdown")
+							// use icon fontAwesome 5
+							a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-sign-in-alt.mx-1] تسجيل الدخول
+							div( class="dropdown-menu" aria-labelledby="navbarDropdown")
+								a(class="dropdown-item" href="#") Action
+								a(class="dropdown-item" href="#") Another action
+								div(class="dropdown-divider")
+								a(class="dropdown-item" href="#") Something else here
+						li(class="nav-item")
+							// use icon fontAwesome 5
+							a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+						li(class="nav-item")
+							// use icon fontAwesome 5
+							a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+
+block contentPage
+	// Start section path
+	section.path
+		// use container Bootstrap 4
+		.container
+			// use breadcrumb Bootstrap 4
+			nav.mb-3.mt-5.dir-right.text-right(aria-label="breadcrumb")
+				ol.breadcrumb
+					li.breadcrumb-item: a(href="#"): i.fab.fa-product-hunt
+					li.breadcrumb-item.active(aria-current="page") طلباتك
+	// End section path
