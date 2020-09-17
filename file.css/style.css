@@ -10,6 +10,7 @@ body {
 }
 
 .top-header {
+  /* use var sass */
   background-color: #2A509F;
 }
 .top-header .phone, .top-header .time, .top-header .location {
@@ -27,6 +28,72 @@ header.home {
 header.home .info {
   padding: 40px 0;
 }
+header.home .info .el-hide {
+  position: relative;
+}
+header.home .info .el-hide div {
+  color: #ffff;
+  position: absolute;
+  border-radius: 33px;
+  display: inline-block;
+  padding: 15px 135px 15px 40px;
+  /* use mixin sass */
+  border-radius: 33px;
+  -o-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+}
+header.home .info .el-hide div::after {
+  top: -16px;
+  width: 85px;
+  height: 85px;
+  right: -15px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 85px;
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Font Awesome 5 Pro';
+  /* use mixin sass */
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+header.home .info .el-hide div:first-of-type {
+  top: 130px;
+  left: 185px;
+  /* use var sass */
+  background-color: #E12029;
+}
+header.home .info .el-hide div:first-of-type::after {
+  content: '\f4c5';
+  /* use var sass */
+  background-color: #E12029;
+}
+header.home .info .el-hide div:nth-of-type(2) {
+  top: 225px;
+  left: 115px;
+  background-color: #4a6eba;
+}
+header.home .info .el-hide div:nth-of-type(2)::after {
+  content: '\f21d';
+  background-color: #4a6eba;
+}
+header.home .info .el-hide div:last-of-type {
+  top: 320px;
+  left: 80px;
+  /* use var sass */
+  background-color: #6DE120;
+}
+header.home .info .el-hide div:last-of-type::after {
+  content: '\f48b';
+  /* use var sass */
+  background-color: #6DE120;
+}
 header.home .info .text p {
   line-height: 25px;
   font-weight: 600;
@@ -38,9 +105,11 @@ header.home .info .btn-group button {
   background-color: #F7F7F7;
 }
 header.home .info .btn-group button:first-of-type {
+  /* use var sass */
   color: #2A509F;
 }
 header.home .info .btn-group button:nth-of-type(2) {
+  /* use var sass */
   color: #6DE120;
 }
 
@@ -922,6 +991,18 @@ footer .copy-right ul li {
   }
   header .info .el-hide {
     height: 565px;
+  }
+  header .info .el-hide div:first-of-type {
+    top: 275px !important;
+    left: 185px !important;
+  }
+  header .info .el-hide div:nth-of-type(2) {
+    top: 360px !important;
+    left: 115px !important;
+  }
+  header .info .el-hide div:last-of-type {
+    top: 445px !important;
+    left: 80px !important;
   }
 
   footer .contact-us .link, .contact {

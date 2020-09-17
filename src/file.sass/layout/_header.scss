@@ -1,4 +1,5 @@
 .top-header {
+    /* use var sass */
     background-color: $color-b;
     .phone, .time, .location {
         color: #fff;
@@ -14,6 +15,64 @@ header {
         background: url(../../../image/Component-1.png) no-repeat -248.86px -355.11px;
         .info {
             padding: 40px 0;
+            .el-hide {
+                position: relative;
+                div {
+                    color: #ffff;
+                    position: absolute;
+                    border-radius: 33px;
+                    display: inline-block;
+                    padding: 15px 135px 15px 40px;
+                    /* use mixin sass */
+                    @include browser(border-radius, 33px, o ms moz webkit);
+                    &::after {
+                        top: -16px;
+                        width: 85px;
+                        height: 85px;
+                        right: -15px;
+                        color: #fff;
+                        font-weight: 300;
+                        line-height: 85px;
+                        position: absolute;
+                        text-align: center;
+                        font-size: xx-large;
+                        font-family: 'Font Awesome 5 Pro';
+                        /* use mixin sass */
+                        @include browser(border-radius, 50%, o ms moz webkit);
+                    }
+                    &:first-of-type {
+                        top: 130px;
+                        left: 185px;
+                        /* use var sass */
+                        background-color: $color-r;
+                        &::after {
+                            content: '\f4c5';
+                            /* use var sass */
+                            background-color: $color-r;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        top: 225px;
+                        left: 115px;
+                        background-color: #4a6eba;
+                        &::after {
+                            content: '\f21d';
+                            background-color: #4a6eba;
+                        }                        
+                    }
+                    &:last-of-type {
+                        top: 320px;
+                        left: 80px;
+                        /* use var sass */
+                        background-color: $color-g;
+                        &::after {
+                            content: '\f48b';
+                            /* use var sass */
+                            background-color: $color-g;
+                        }                        
+                    }                                        
+                }
+            }
             .text p {
                 line-height: 25px;
                 font-weight: 600;
@@ -24,9 +83,11 @@ header {
                 padding: 10px 15px;             
                 background-color: #F7F7F7;
                 &:first-of-type {
+                    /* use var sass */
                     color: $color-b;
                 }
                 &:nth-of-type(2) {
+                    /* use var sass */
                     color: $color-g;
                 }            
             }

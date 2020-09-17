@@ -9,11 +9,25 @@
         }
         .el-hide {
             height: 565px;
+            div {
+                &:first-of-type {
+                    top: 275px !important;
+                    left: 185px !important;
+                }
+                &:nth-of-type(2) {
+                    top: 360px !important;
+                    left: 115px !important;
+                }
+                &:last-of-type {
+                    top: 445px !important;
+                    left: 80px !important;
+                }
+            }             
         }
     }
     footer .contact-us .link, .contact{
         flex-wrap: wrap;
-    }
+    }   
 }
 @media  (max-width: 767px) {
     header .info .btn-group {
