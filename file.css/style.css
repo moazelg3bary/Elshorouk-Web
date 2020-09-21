@@ -6,7 +6,7 @@
 /*Start Variables Helprs*/
 body {
   font-family: 'Cairo', sans-serif;
-  background: url(../../../image/Group7.png) no-repeat center center;
+  background: url(../image/Group7.png) no-repeat center center;
 }
 
 .top-header {
@@ -23,7 +23,7 @@ body {
 
 header.home {
   padding-bottom: 80px;
-  background: url(../../../image/Component-1.png) no-repeat -248.86px -355.11px;
+  background: url(../image/Component-1.png) no-repeat -248.86px -355.11px;
 }
 header.home .info {
   padding: 40px 0;
