@@ -1,4 +1,5 @@
 .top-header {
+    padding: 10px 0px;
     /* use var sass */
     background-color: $color-b;
     .phone, .time, .location {
@@ -46,7 +47,8 @@ header {
                         /* use var sass */
                         background-color: $color-r;
                         &::after {
-                            content: '\f4c5';
+                            font-weight: 900;
+                            content: '\f0d6';
                             /* use var sass */
                             background-color: $color-r;
                         }
@@ -56,7 +58,8 @@ header {
                         left: 115px;
                         background-color: #4a6eba;
                         &::after {
-                            content: '\f21d';
+                            font-weight: 500;
+                            content: '\f09d';
                             background-color: #4a6eba;
                         }                        
                     }
@@ -66,7 +69,8 @@ header {
                         /* use var sass */
                         background-color: $color-g;
                         &::after {
-                            content: '\f48b';
+                            font-weight: 900;
+                            content: '\f0d1';
                             /* use var sass */
                             background-color: $color-g;
                         }                        
@@ -77,19 +81,24 @@ header {
                 line-height: 25px;
                 font-weight: 600;
             }
-            .btn-group button {
-                font-weight: bold;
-                border-radius: 25px;
-                padding: 10px 15px;             
-                background-color: #F7F7F7;
-                &:first-of-type {
-                    /* use var sass */
-                    color: $color-b;
+            .servers {
+                display: inline-block;
+                div {
+                    font-weight: 600;
+                    padding: 12px 15px;                    
+                    display: inline-block;
+                    background-color: $color-gray;
+                    &:first-of-type {
+                        color: $color-b;
+                        border-radius: 25px 0 0 25px;
+                    }
+                    &:nth-of-type(2) {
+                        color: $color-g;
+                    }
+                    &:last-of-type {
+                        border-radius: 0 25px 25px 0;
+                    }
                 }
-                &:nth-of-type(2) {
-                    /* use var sass */
-                    color: $color-g;
-                }            
             }
         }
     }

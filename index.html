@@ -24,13 +24,13 @@
         <div class="row">
           <!-- gird system B4 & class-->
           <div class="col-sm-4 col-md-4 col-lg-3 text-center text-sm-left my-2 px-1 px-sm-0 phone"><span>الهاتف : 010111155422 </span>
-            <!-- use icon fontAwesome 5--><i class="fas fa-phone-square"></i>
+            <!-- use icon fontAwesome 5--><i class="fas fa-phone"></i>
           </div>
           <div class="col-sm-5 col-md-4 col-lg-7 text-center my-2 px-1 px-sm-0 time"><span>من الساعه (8 ص - 5 م ) طول ايام الاسبوع ماعدا الجمعه والاجازات الرسميه </span>
             <!-- use icon fontAwesome 5--><i class="far fa-clock"></i>
           </div>
           <div class="col-sm-3 col-md-4 col-lg-2 text-center text-sm-right my-2 px-1 px-sm-0 location"><span>المنيا - دمشير </span>
-            <!-- use icon fontAwesome 5--><i class="fal fa-map-marker-alt"></i>
+            <!-- use icon fontAwesome 5--><i class="fas fa-map-marker-alt"></i>
           </div>
         </div>
       </div>
@@ -42,24 +42,27 @@
         <div class="container"><a class="navbar-brand m-0" href="./index.html"><img src="./image/logo.png" width="53" height="68" alt="" loading="lazy"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span><i class="far fa-bars"></i></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto d-block d-lg-flex">
               <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-address-card mx-1"></i> تواصل معنا </a>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-envelope-open mx-1"></i> تواصل معنا </a>
               </li>
               <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-question-circle mx-1"></i> الأسئلة الشائعة</a>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="fas fa-question mx-1"></i> الأسئلة الشائعة</a>
               </li>
               <li class="nav-item dropdown">
-                <!-- use icon fontAwesome 5--><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-sign-in-alt mx-1"></i> تسجيل الدخول</a>
+                <!-- use icon fontAwesome 5--><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user-circle mx-1"></i> تسجيل الدخول</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
                   <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-question-circle mx-1"></i></a>
+              <li class="nav-item search">
+                <form class="form-search">
+                  <input class="form-control" type="search" id="search" aria-describedby="searchHelp">
+                </form>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="fas fa-search mx-1"></i></a>
               </li>
-              <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-question-circle mx-1"></i></a>
+              <li class="nav-item cart d-inline-block"><span class="total-cart">0</span>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="fas fa-shopping-cart mx-1"></i></a>
               </li>
             </ul>
           </div>
@@ -80,10 +83,10 @@
               <p>نحن موزع معتمد للعديد من العلامات التجارية الشهيرة، مثل الهلال والنجمة ولمسة وماكس كما يوفر الموقع أفضل الأسعار لأفضل المنتجاتمهمتنا هي توفير تجربة تسوق مميزة للعميل عن طريق توفير منتجات جديدة ومتنوعة، ونقوم بتوصيل كل طلباتكم حتى باب منزلكم , وطرق الدفع كثيرة ومنها الدفع عند الإستلام رؤيتنا هي أن نكون الموقع رقم واحد لبيع أدوات المنزل في الشرق الأوسط</p>
             </div>
             <div class="col-sm-12 my-4">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button class="btn  my-1" type="button">الشحن والتوصيل الى موقعك</button>
-                <button class="btn mx-1 my-1" type="button">الشحن والتوصيل الى موقعك</button>
-                <button class="btn my-1" type="button">خدماتنا </button>
+              <div class="servers">
+                <div class="my-2">الشحن والتوصيل الى موقعك <i class="fas fa-check-double"></i></div>
+                <div class="my-2">الشحن والتوصيل الى موقعك <i class="fas fa-check-double"></i></div>
+                <div class="my-2">خدماتنا  </div>
               </div>
             </div>
           </div>
@@ -115,19 +118,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -135,19 +138,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -155,19 +158,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -175,19 +178,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -212,19 +215,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -232,19 +235,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -252,19 +255,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart"></i></li>
+                  <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
               </div>
             </div>
@@ -272,19 +275,19 @@
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 prodect dir-right text-right my-4">
             <div class="card">
               <!-- use icon fontAwesome 5-->
-              <span class="cart"><i class="far fa-shopping-cart"></i></span>
+              <span class="cart"><i class="far fa-heart"></i></span>
               
               <div class="cont-img"><img class="card-img-top" src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" alt="img"></div>
               <div class="card-body">
                 <p class="card-text">طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك </p>
                 <ul class="info">
-                  <li>اركوبال - سيراميك</li>
+                  <li><i class="fas fa-folder"></i> اركوبال - سيراميك</li>
                   <li>100 جنيه</li>
                 </ul>
                 <ul class="ditlist">
                   <li>تفاصيل المنتج</li>
                   <!-- use icon fontAwesome 5-->
-                  <li><i class="far fa-shopping-cart">                 </i></li>
+                  <li><i class="fas fa-shopping-cart">                 </i></li>
                 </ul>
               </div>
             </div>
@@ -305,7 +308,7 @@
               <ul>
                 <li>50</li>
                 <li>
-                  <!-- icon fontAwesome 5--><span><i class="fas fa-truck-loading"></i></span><span>الطلبات</span>
+                  <!-- icon fontAwesome 5--><span><i class="fas fa-reply"></i></span><span>الطلبات</span>
                 </li>
               </ul>
             </div>
@@ -315,7 +318,7 @@
               <ul>
                 <li>50</li>
                 <li>
-                  <!-- icon fontAwesome 5--><span><i class="fas fa-star"></i></span><span>التقييمات</span>
+                  <!-- icon fontAwesome 5--><span><i class="far fa-star"></i></span><span>التقييمات</span>
                 </li>
               </ul>
             </div>
@@ -325,7 +328,7 @@
               <ul>
                 <li>500</li>
                 <li>
-                  <!-- icon fontAwesome 5--><span><i class="fab fa-product-hunt"></i></span><span>المنتجات</span>
+                  <!-- icon fontAwesome 5--><span><i class="fas fa-hand-holding-heart"></i></span><span>المنتجات</span>
                 </li>
               </ul>
             </div>
@@ -335,7 +338,7 @@
               <ul>
                 <li>100</li>
                 <li>
-                  <!-- icon fontAwesome 5--><span><i class="fas fa-users"></i></span><span>المستخدمين</span>
+                  <!-- icon fontAwesome 5--><span><i class="far fa-user"></i></span><span>المستخدمين</span>
                 </li>
               </ul>
             </div>
@@ -381,11 +384,11 @@
                 <ul class="text-center text-md-right">
                   <!-- icon fontAwesome 5-->
                   <li><i class="fab fa-facebook-square"></i></li>
-                  <li><i class="fab fa-instagram"></i></li>
                   <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-youtube"></i></li>
-                  <li><i class="fab fa-snapchat-square"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
                   <li><i class="fab fa-linkedin"></i></li>
+                  <li><i class="fab fa-pinterest"></i></li>
+                  <li><i class="fab fa-behance"></i></li>
                 </ul>
               </div>
             </div>

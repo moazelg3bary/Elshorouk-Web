@@ -1,8 +1,21 @@
 /*global console, alert, swal, prompt, $*/
 window.onload = function () {
   'use strict';
-  var container = document.getElementById('view_img'),
-      children = document.getElementById('children');
+  var toNum,
+      calc,
+      container = document.getElementById('view_img'),
+      children = document.getElementById('children'),
+      total_cart = document.querySelector('.total-cart'),
+      ditlist = document.querySelectorAll('.ditlist');
+
+  for (let i = 0; i < ditlist.length; i++) {
+    ditlist[i].lastElementChild.onclick = function () {
+      toNum = parseInt(total_cart.innerHTML);
+      calc = toNum += 1;
+      total_cart.innerHTML = calc;
+    }
+
+  }      
 
   for(let i = 0; i < children.children.length; i++) {
 

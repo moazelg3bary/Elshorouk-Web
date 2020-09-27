@@ -30,11 +30,12 @@
     }   
 }
 @media  (max-width: 767px) {
-    header .info .btn-group {
-        display: flex;
+    header .info .servers {
         flex-flow: wrap;
+        text-align: center;
+        display: flex !important;
         justify-content: center;
-        button {
+        div {
             flex-grow: 1;
         }
     }

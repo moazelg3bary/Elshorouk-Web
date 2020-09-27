@@ -50,20 +50,20 @@
             @include browser(border-radius, 0.25rem, o ms moz webkit);
             &:hover  {
                 &::after {
-                    opacity: .5;
+                    opacity: 0;
                 }
             }
             &::after {
                 top: 0;
                 left: 0;
-                opacity: 0;
+                opacity: .5;
                 content: '';
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 background-image: linear-gradient(227deg, #E12020, #274B96);
                 /* use mixin sass */
-                @include browser(transition, opacity .5s ease-in-out, o ms moz webkit);
+                @include browser(transition, opacity .2s ease-in-out, o ms moz webkit);
             }
         }
         .card-body {
@@ -86,6 +86,12 @@
                     li {
                         &:first-of-type {
                             font-size: 11px;
+                            i {
+                                font-size: 1;
+                                color: #bbb;
+                                margin-left: 3px;                                
+                                vertical-align: middle;
+                            }
                         }
                         &:last-of-type {
                             /* use var sass */
@@ -102,6 +108,10 @@
                         padding: 10px 55px;
                         /* use var sass */
                         background: $color-b;
+                        transition: background-color .2s ease-in-out;
+                        &:hover {
+                            background: $color-r;
+                        }
                     }
                     &:last-of-type {
                         padding: 10px 15px;
@@ -200,6 +210,7 @@
 // ------
 /* start section path */
 .path .breadcrumb{
+    background-color: #F9F9F9;
     /* use mixin sass */
     @include browser(border-radius, 35px, o ms moz webkit);
 }
@@ -211,8 +222,9 @@
         .dis {
             p {
                 font-size: 22px;
+                font-weight: bold;
                 /* use var sass */
-                color: $color-t-b;
+                color: $color-b;
             }
         }
         .section {
@@ -288,7 +300,7 @@
                 font-weight: 600;
                 margin-right: 5px;
                 /* use var sass */
-                color: $color-t-b;
+                color: $color-b;
             }
         }
         .delivery p {
@@ -376,6 +388,7 @@
                 /* use mixin sass */
                 @include browser(border-radius, 22px, o ms moz webkit);
                 i {
+                    font-size: 18px;
                     vertical-align: middle;
                 }
             }
@@ -436,12 +449,17 @@
 .load-more button {
     color: #fff;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     padding: 10px 60px;
     /* use var sass */
     background-color: $color-b;
     /* use mixin sass */
     @include browser(border-radius, 22px, o ms moz webkit);
+    @include browser(transition, all .3s ease-in-out, o ms moz webkit);
+    &:hover {
+        @include browser(box-shadow, 0px 10px 20px #e1212929, o ms moz webkit);
+        background-color: $color-r;
+    }
 }
 /* End section .load-more */
 // ------
@@ -529,7 +547,7 @@
                 }
                 &:last-of-type {
                     margin-top: 15px;
-                    button {
+                    select {
                         padding: 5px;
                         /* use var sass */
                         color: $color-b;

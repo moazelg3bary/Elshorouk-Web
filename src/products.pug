@@ -15,27 +15,30 @@ block Header
 				button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
 					span: i.far.fa-bars
 				div(class="collapse navbar-collapse" id="navbarSupportedContent")
-					ul(class="navbar-nav mr-auto")
+					ul(class="navbar-nav mr-auto d-block d-lg-flex")
 						li(class="nav-item")
 							// use icon fontAwesome 5
-							a(class="nav-link" href="#") #[i.far.fa-address-card.mx-1] تواصل معنا 
+							a(class="nav-link" href="#") #[i.far.fa-envelope-open.mx-1] تواصل معنا 
 						li(class="nav-item")
 							// use icon fontAwesome 5
-							a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1] الأسئلة الشائعة
+							a(class="nav-link" href="#") #[i.fas.fa-question.mx-1] الأسئلة الشائعة
 						li(class="nav-item dropdown")
 							// use icon fontAwesome 5
-							a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-sign-in-alt.mx-1] تسجيل الدخول
+							a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-user-circle.mx-1] تسجيل الدخول
 							div( class="dropdown-menu" aria-labelledby="navbarDropdown")
 								a(class="dropdown-item" href="#") Action
 								a(class="dropdown-item" href="#") Another action
 								div(class="dropdown-divider")
 								a(class="dropdown-item" href="#") Something else here
-						li(class="nav-item")
+						li(class="nav-item search not-home")
+							form.form-search
+								input(type="search" class="form-control" id="search" aria-describedby="searchHelp")
 							// use icon fontAwesome 5
-							a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
-						li(class="nav-item")
+							a(class="nav-link" href="#") #[i.fas.fa-search.mx-1]
+						li(class="nav-item cart d-inline-block")
+							span.total-cart 0
 							// use icon fontAwesome 5
-							a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+							a(class="nav-link" href="#") #[i.fas.fa-shopping-cart.mx-1]
 
 block contentPage
 	// Start section path
@@ -45,7 +48,7 @@ block contentPage
 			// use breadcrumb Bootstrap 4
 			nav.mb-3.mt-5.dir-right.text-right(aria-label="breadcrumb")
 				ol.breadcrumb
-					li.breadcrumb-item: a(href="#"): i.fab.fa-product-hunt
+					li.breadcrumb-item: a(href="#"): i.fas.fa-home
 					li.breadcrumb-item.active(aria-current="page") جميع المنتجات
 	// End section path
 	|
@@ -60,7 +63,7 @@ block contentPage
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -72,13 +75,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -90,13 +93,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -108,13 +111,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -126,14 +129,14 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 			.row
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -145,13 +148,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -163,13 +166,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -181,13 +184,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -199,14 +202,14 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 			.row
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -218,13 +221,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -236,13 +239,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -254,13 +257,13 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 				.col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
 					div(class="card")|
 						// use icon fontAwesome 5
 						|
 						|
-						span.cart: i.far.fa-shopping-cart|
+						span.cart: i.far.fa-heart|
 						|
 						|
 						div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -272,7 +275,7 @@ block contentPage
 							ul.ditlist
 								li تفاصيل المنتج
 								// use icon fontAwesome 5
-								li: i.far.fa-shopping-cart
+								li: i.fas.fa-shopping-cart
 	// End section products
 	|
 	|

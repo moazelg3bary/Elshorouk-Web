@@ -28,7 +28,7 @@ html(lang = 'en')
           .col-sm-4.col-md-4.col-lg-3.text-center.text-sm-left.my-2.px-1.px-sm-0.phone
             span الهاتف : 010111155422 
             // use icon fontAwesome 5
-            i.fas.fa-phone-square
+            i.fas.fa-phone
           .col-sm-5.col-md-4.col-lg-7.text-center.my-2.px-1.px-sm-0.time
             span من الساعه (8 ص - 5 م ) طول ايام الاسبوع ماعدا الجمعه والاجازات الرسميه 
             // use icon fontAwesome 5
@@ -36,7 +36,7 @@ html(lang = 'en')
           .col-sm-3.col-md-4.col-lg-2.text-center.text-sm-right.my-2.px-1.px-sm-0.location
             span المنيا - دمشير 
             // use icon fontAwesome 5
-            i.fal.fa-map-marker-alt
+            i.fas.fa-map-marker-alt
     block Header
       header.home
         // use navbar Bootstrp 4
@@ -47,27 +47,30 @@ html(lang = 'en')
             button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
               span: i.far.fa-bars
             div(class="collapse navbar-collapse" id="navbarSupportedContent")
-              ul(class="navbar-nav mr-auto")
+              ul(class="navbar-nav mr-auto d-block d-lg-flex")
                 li(class="nav-item")
                   // use icon fontAwesome 5
-                  a(class="nav-link" href="#") #[i.far.fa-address-card.mx-1] تواصل معنا 
+                  a(class="nav-link" href="#") #[i.far.fa-envelope-open.mx-1] تواصل معنا 
                 li(class="nav-item")
                   // use icon fontAwesome 5
-                  a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1] الأسئلة الشائعة
+                  a(class="nav-link" href="#") #[i.fas.fa-question.mx-1] الأسئلة الشائعة
                 li(class="nav-item dropdown")
                   // use icon fontAwesome 5
-                  a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-sign-in-alt.mx-1] تسجيل الدخول
+                  a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") #[i.far.fa-user-circle.mx-1] تسجيل الدخول
                   div( class="dropdown-menu" aria-labelledby="navbarDropdown")
                     a(class="dropdown-item" href="#") Action
                     a(class="dropdown-item" href="#") Another action
                     div(class="dropdown-divider")
                     a(class="dropdown-item" href="#") Something else here
-                li(class="nav-item")
+                li(class="nav-item search")
+                  form.form-search
+                    input(type="search" class="form-control" id="search" aria-describedby="searchHelp")
                   // use icon fontAwesome 5
-                  a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
-                li(class="nav-item")
+                  a(class="nav-link" href="#") #[i.fas.fa-search.mx-1]
+                li(class="nav-item cart d-inline-block")
+                  span.total-cart 0
                   // use icon fontAwesome 5
-                  a(class="nav-link" href="#") #[i.far.fa-question-circle.mx-1]
+                  a(class="nav-link" href="#") #[i.fas.fa-shopping-cart.mx-1]
         .info
           // use container Bootstrap 4
           .container
@@ -81,10 +84,10 @@ html(lang = 'en')
                 p شركة الشروق للتجارة والتوزيع شركة استثمار خاصة , تم انشاء موقع شركة الشروق للتجارة والتوزيع ليكون أكبر موقع تسوق إلكتروني لأدوات المنزل في مصر والشرق الأوسط. إذا كنت تبحث عن علب الطعام، أدوات الطبخ، لانش بوكس، أدوات شرب، أدوات زجاجية، أدوات خبز وغيرها فإن موقع شركة الشروق للتجارة والتوزيع هو المكان الأمثل لتجد فيه ما تريد، فجميع مع تريد لبيتك ستجده في موقع واحد. جميع المنتجات المعروضة على الموقع أصلية وذات جودة عالية.
                 p نحن موزع معتمد للعديد من العلامات التجارية الشهيرة، مثل الهلال والنجمة ولمسة وماكس كما يوفر الموقع أفضل الأسعار لأفضل المنتجاتمهمتنا هي توفير تجربة تسوق مميزة للعميل عن طريق توفير منتجات جديدة ومتنوعة، ونقوم بتوصيل كل طلباتكم حتى باب منزلكم , وطرق الدفع كثيرة ومنها الدفع عند الإستلام رؤيتنا هي أن نكون الموقع رقم واحد لبيع أدوات المنزل في الشرق الأوسط
               .col-sm-12.my-4
-                div(class="btn-group" role="group" aria-label="Basic example")
-                  button(type="button" class="btn  my-1") الشحن والتوصيل الى موقعك
-                  button(type="button" class="btn mx-1 my-1") الشحن والتوصيل الى موقعك
-                  button(type="button" class="btn my-1") خدماتنا 
+                div.servers
+                  div.my-2 الشحن والتوصيل الى موقعك #[i.fas.fa-check-double]
+                  div.my-2 الشحن والتوصيل الى موقعك #[i.fas.fa-check-double]
+                  div.my-2 خدماتنا  
     // End Header
     |
     |
@@ -113,73 +116,73 @@ html(lang = 'en')
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
           .row
             // grid system Bootstrap 4
             .col-sm-6.view
@@ -200,73 +203,73 @@ html(lang = 'en')
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-shopping-cart|
+                span.cart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
                 .card-body
                   p.card-text طقم أدوات مائدة خزفية, طقم أدوات خزفية بجودة عالية ، صناعة ألمانية وألوانية بيضاء عتيقة ، طقم أدوات خزفية خاصة بك 
                   ul.info
-                    li اركوبال - سيراميك
+                    li #[i.fas.fa-folder] اركوبال - سيراميك
                     li 100 جنيه
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.far.fa-shopping-cart                  
+                    li: i.fas.fa-shopping-cart                  
       // End section products
       |
       |
@@ -286,7 +289,7 @@ html(lang = 'en')
                   li 50
                   li
                     // icon fontAwesome 5
-                    span: i.fas.fa-truck-loading
+                    span: i.fas.fa-reply
                     span الطلبات
             .col-sm-12.col-md-6.col-lg-3.box-status.my-4
               .cont-status.limit
@@ -294,7 +297,7 @@ html(lang = 'en')
                   li 50
                   li
                     // icon fontAwesome 5
-                    span: i.fas.fa-star
+                    span: i.far.fa-star
                     span التقييمات
             .col-sm-12.col-md-6.col-lg-3.box-status.my-4
               .cont-status.item
@@ -302,7 +305,7 @@ html(lang = 'en')
                   li 500
                   li
                     // icon fontAwesome 5
-                    span: i.fab.fa-product-hunt
+                    span: i.fas.fa-hand-holding-heart
                     span المنتجات
             .col-sm-12.col-md-6.col-lg-3.box-status.my-4
               .cont-status.users
@@ -310,7 +313,7 @@ html(lang = 'en')
                   li 100
                   li
                     // icon fontAwesome 5
-                    span: i.fas.fa-users
+                    span: i.far.fa-user
                     span المستخدمين
       //End section status
     |
@@ -348,11 +351,11 @@ html(lang = 'en')
                 ul.text-center.text-md-right
                   // icon fontAwesome 5
                   li: i.fab.fa-facebook-square
-                  li: i.fab.fa-instagram
                   li: i.fab.fa-twitter
-                  li: i.fab.fa-youtube
-                  li: i.fab.fa-snapchat-square
+                  li: i.fab.fa-instagram
                   li: i.fab.fa-linkedin
+                  li: i.fab.fa-pinterest
+                  li: i.fab.fa-behance
           .col-sm-12.copy-right
             ul.d-block.text-center.d-sm-flex
               li Copyright 2020 4SOFT. All rights reserved

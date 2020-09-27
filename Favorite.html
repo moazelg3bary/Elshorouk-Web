@@ -24,13 +24,13 @@
         <div class="row">
           <!-- gird system B4 & class-->
           <div class="col-sm-4 col-md-4 col-lg-3 text-center text-sm-left my-2 px-1 px-sm-0 phone"><span>الهاتف : 010111155422 </span>
-            <!-- use icon fontAwesome 5--><i class="fas fa-phone-square"></i>
+            <!-- use icon fontAwesome 5--><i class="fas fa-phone"></i>
           </div>
           <div class="col-sm-5 col-md-4 col-lg-7 text-center my-2 px-1 px-sm-0 time"><span>من الساعه (8 ص - 5 م ) طول ايام الاسبوع ماعدا الجمعه والاجازات الرسميه </span>
             <!-- use icon fontAwesome 5--><i class="far fa-clock"></i>
           </div>
           <div class="col-sm-3 col-md-4 col-lg-2 text-center text-sm-right my-2 px-1 px-sm-0 location"><span>المنيا - دمشير </span>
-            <!-- use icon fontAwesome 5--><i class="fal fa-map-marker-alt"></i>
+            <!-- use icon fontAwesome 5--><i class="fas fa-map-marker-alt"></i>
           </div>
         </div>
       </div>
@@ -42,24 +42,27 @@
         <div class="container"><a class="navbar-brand m-0" href="./index.html"><img src="./image/logo.png" width="53" height="68" alt="" loading="lazy"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span><i class="far fa-bars"></i></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto d-block d-lg-flex">
               <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-address-card mx-1"></i> تواصل معنا </a>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-envelope-open mx-1"></i> تواصل معنا </a>
               </li>
               <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-question-circle mx-1"></i> الأسئلة الشائعة</a>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="fas fa-question mx-1"></i> الأسئلة الشائعة</a>
               </li>
               <li class="nav-item dropdown">
-                <!-- use icon fontAwesome 5--><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-sign-in-alt mx-1"></i> تسجيل الدخول</a>
+                <!-- use icon fontAwesome 5--><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user-circle mx-1"></i> تسجيل الدخول</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
                   <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-question-circle mx-1"></i></a>
+              <li class="nav-item search not-home">
+                <form class="form-search">
+                  <input class="form-control" type="search" id="search" aria-describedby="searchHelp">
+                </form>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="fas fa-search mx-1"></i></a>
               </li>
-              <li class="nav-item">
-                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="far fa-question-circle mx-1"></i></a>
+              <li class="nav-item cart d-inline-block"><span class="total-cart">0</span>
+                <!-- use icon fontAwesome 5--><a class="nav-link" href="#"><i class="fas fa-shopping-cart mx-1"></i></a>
               </li>
             </ul>
           </div>
@@ -75,7 +78,7 @@
         <!-- use breadcrumb Bootstrap 4-->
         <nav class="mb-3 mt-5 dir-right text-right" aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="fab fa-product-hunt"></i></a></li>
+            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
             <li class="breadcrumb-item active" aria-current="page">المفضلة</li>
           </ol>
         </nav>
@@ -106,7 +109,7 @@
               </li>
               <li>
                 <!-- use icon FontAwsome 5-->
-                <button class="btn"><span><i class="fas fa-trash-alt"></i></span> حذف</button>
+                <button class="btn"><span><i class="fas fa-times"></i></span> حذف</button>
               </li>
             </ul>
           </div>
@@ -130,7 +133,7 @@
               </li>
               <li>
                 <!-- use icon FontAwsome 5-->
-                <button class="btn"><span><i class="fas fa-trash-alt"></i></span> حذف</button>
+                <button class="btn"><span><i class="fas fa-times"></i></span> حذف</button>
               </li>
             </ul>
           </div>
@@ -154,7 +157,7 @@
               </li>
               <li>
                 <!-- use icon FontAwsome 5-->
-                <button class="btn"><span><i class="fas fa-trash-alt"></i></span> حذف</button>
+                <button class="btn"><span><i class="fas fa-times"></i></span> حذف</button>
               </li>
             </ul>
           </div>
@@ -178,7 +181,7 @@
               </li>
               <li>
                 <!-- use icon FontAwsome 5-->
-                <button class="btn"><span><i class="fas fa-trash-alt"></i></span> حذف														</button>
+                <button class="btn"><span><i class="fas fa-times"></i></span> حذف														</button>
               </li>
             </ul>
           </div>
@@ -223,11 +226,11 @@
                 <ul class="text-center text-md-right">
                   <!-- icon fontAwesome 5-->
                   <li><i class="fab fa-facebook-square"></i></li>
-                  <li><i class="fab fa-instagram"></i></li>
                   <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-youtube"></i></li>
-                  <li><i class="fab fa-snapchat-square"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
                   <li><i class="fab fa-linkedin"></i></li>
+                  <li><i class="fab fa-pinterest"></i></li>
+                  <li><i class="fab fa-behance"></i></li>
                 </ul>
               </div>
             </div>
