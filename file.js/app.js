@@ -1,6 +1,8 @@
 /*global console, alert, swal, prompt, $*/
 window.onload = function () {
   'use strict';
+
+  // init global varibles
   var toNum,
       calc,
       container = document.getElementById('view_img'),
@@ -8,6 +10,7 @@ window.onload = function () {
       total_cart = document.querySelector('.total-cart'),
       ditlist = document.querySelectorAll('.ditlist');
 
+  // get cart & increase number
   for (let i = 0; i < ditlist.length; i++) {
     ditlist[i].lastElementChild.onclick = function () {
       toNum = parseInt(total_cart.innerHTML);
@@ -17,6 +20,7 @@ window.onload = function () {
 
   }      
 
+  
   for(let i = 0; i < children.children.length; i++) {
 
     children.children[i].onclick = function() {
