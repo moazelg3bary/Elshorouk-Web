@@ -5,6 +5,7 @@
 /*Start Variables Helprs*/
 /*Start Variables Helprs*/
 body {
+  overflow-x: hidden;
   font-family: 'Cairo', sans-serif;
   background: url(../../../image/Group7.png) no-repeat center center;
 }

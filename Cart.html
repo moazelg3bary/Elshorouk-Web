@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&amp;display=swap">
     <link rel="stylesheet" href="./file.css/bootstrap.css">
     <link rel="stylesheet" href="./file.css/bootstrap-editor.css">
+    <link rel="stylesheet" href="./file.css/animate.css">
     <link rel="stylesheet" href="./file.css/all.css">
     <link rel="stylesheet" href="./file.css/style.css">
     <link rel="stylesheet" href="./file.css/style.ar.css"><!-- [if lt IE 9]>
@@ -232,13 +233,13 @@
       <div class="container">
         <div class="row">
           <!-- grid system Bootstrap 4-->
-          <div class="col-sm-12 col-md-6 loation mb-5">
+          <div class="col-sm-12 col-md-6 loation mb-5 wow bounceInLeft" data-wow-offset="200">
             <div class="loc">
               <!-- icon fontAwesome 5--><span><i class="far fa-arrow-right"></i></span><span> الشروق للأدوات المنزلية - المنيا</span>
               <!-- use Embed Google Map-->
             </div><div style="overflow:hidden;width: auto;position: relative;"><iframe width="100%" height="400" src="https://maps.google.com/maps?hl=en&amp;q=الشروق للأدوات المنزلية - المنيا+()&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://googlemapsembed.net/">Embed Google Map</a> </small></div><style>.nvs{position:relative;text-align:right;height:325px;width:643px;} #gmap_canvas img{max-width:none!important;background:none!important}</style></div>         
           </div>
-          <div class="col-sm-12 col-md-6 contact-us">
+          <div class="col-sm-12 col-md-6 contact-us wow bounceInRight" data-wow-offset="200">
             <div class="row">
               <div class="col-sm-12 col-md-6 link p-0">
                 <ul>
@@ -284,6 +285,8 @@
     <script src="./file.js/popper.js"></script>
     <script src="./file.js/jquery-3.3.1.min.js"></script>
     <script src="./file.js/bootstrap.min.js"></script>
+    <script src="./file.js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="./file.js/app.js"></script>
   </body>
 </html>
