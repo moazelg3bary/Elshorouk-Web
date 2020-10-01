@@ -5,15 +5,14 @@ window.onload = function () {
   // init global varibles
   var toNum,
       calc,
+      clear,
       container = document.getElementById('view_img'),
       children = document.getElementById('children'),
       total_cart = document.querySelector('.total-cart'),
       ditlist = document.querySelectorAll('.ditlist'),
       notification = document.querySelector('.notification');
 
-  setTimeout(() => {
-    notification.classList.add('show')
-  }, 3000)
+
 
   // get cart & increase number
   for (let i = 0; i < ditlist.length; i++) {
@@ -21,6 +20,10 @@ window.onload = function () {
       toNum = parseInt(total_cart.innerHTML);
       calc = toNum += 1;
       total_cart.innerHTML = calc;
+
+      notification.classList.add('show')
+      
+      notification.classList.contains('show') ? clear = setTimeout(function () { notification.classList.remove('show') }, 3000) : null
     }
 
   }      
@@ -42,3 +45,13 @@ window.onload = function () {
   }
   
 }
+
+$(document).ready(() => {
+  $("html").niceScroll({
+    cursorcolor: "#2A509F",
+    cursorwidth: "7px",
+    background: "transparent",
+    cursorborder: "none",
+    cursorborderradius: 15
+  });
+})

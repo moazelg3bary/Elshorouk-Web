@@ -12,14 +12,14 @@ body {
 }
 
 .notification {
-  top: 100px;
-  right: -300px;
-  position: absolute;
+  top: 70px;
+  right: -100%;
+  position: fixed;
   padding: 15px 10px;
   border-radius: 5px;
-  display: inline-block;
   background-color: #2A509F;
-  transition: all .2s linear;
+  transition: right .5s linear;
+  cursor: pointer;
 }
 .notification.show {
   right: 20px;
@@ -926,7 +926,6 @@ header.home .info .servers div:last-of-type {
 /**/
 /*Start footer*/
 footer {
-  margin-top: 25px;
   padding: 45px 0px 20px 0px;
   /* use var sass */
   background-color: #E12029;

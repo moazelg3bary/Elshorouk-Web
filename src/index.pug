@@ -115,7 +115,7 @@ html(lang = 'en')
                 li
                   span  أحدث المنتجات 
                   span: img(src="./image/Arrow.png", alt="")
-          .row.mb-5.wow.bounceInRight(data-wow-offset='200')
+          .row.mb-5
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
@@ -202,7 +202,7 @@ html(lang = 'en')
                 li
                   span  الأكثر طلباً
                   span: img(src="./image/Arrow.png", alt="")
-          .row.wow.bounceInLeft(data-wow-offset='250')
+          .row
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
@@ -372,4 +372,5 @@ html(lang = 'en')
     script(src = './file.js/wow.min.js')
     script
       |new WOW().init();
+    script(src="./file.js/jquery.nicescroll.min.js")
     script(src = './file.js/app.js')

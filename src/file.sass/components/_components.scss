@@ -6,14 +6,14 @@ body {
     background: url(../../../image/Group7.png) no-repeat center center;
 }
 .notification {
-    top: 100px;
-    right: -300px;
-    position: absolute;
+    top: 70px;
+    right: -100%;
+    position: fixed;
     padding: 15px 10px;
     border-radius: 5px;
-    display: inline-block;
     background-color: $color-b;
-    transition: all .2s linear;
+    transition: right .5s linear;
+    cursor: pointer;
     &.show {
         right: 20px;
     }
