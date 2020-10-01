@@ -8,7 +8,12 @@ window.onload = function () {
       container = document.getElementById('view_img'),
       children = document.getElementById('children'),
       total_cart = document.querySelector('.total-cart'),
-      ditlist = document.querySelectorAll('.ditlist');
+      ditlist = document.querySelectorAll('.ditlist'),
+      notification = document.querySelector('.notification');
+
+  setTimeout(() => {
+    notification.classList.add('show')
+  }, 3000)
 
   // get cart & increase number
   for (let i = 0; i < ditlist.length; i++) {

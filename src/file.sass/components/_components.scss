@@ -1,6 +1,32 @@
 // default style 
 body {
+    position: relative;
     overflow-x: hidden;
     font-family: 'Cairo', sans-serif;
     background: url(../../../image/Group7.png) no-repeat center center;
+}
+.notification {
+    top: 100px;
+    right: -300px;
+    position: absolute;
+    padding: 15px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: $color-b;
+    transition: all .2s linear;
+    &.show {
+        right: 20px;
+    }
+    span {
+        margin-right: 10px;
+        i {
+            color: #fff;            
+            font-size: 20px;
+            vertical-align: middle;
+        }
+    }
+    a {
+        color: #fff;
+        font-weight: 600;        
+    }
 }
