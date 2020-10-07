@@ -110,9 +110,34 @@ footer {
                     display: inline-block;
                     margin: 30px 15px 0 0;
                     i {
+                        padding: 5px;
                         color: #fff;
                         font-size: 25px;
+                        @include browser(border-radius, 5px, o ms moz webkit);
+                        @include browser(transition, color .3s linear, o ms moz webkit);
+                        &:hover {
+                            background-color: #fff;
+                        }
                     }
+                    &:first-of-type i:hover {
+                        color: $color-fb;
+                        
+                    }
+                    &:nth-of-type(2) i:hover {
+                        color: $color-twitter;
+                    }
+                    &:nth-of-type(3) i:hover {
+                        color: $color-insta;
+                    }
+                    &:nth-of-type(4) i:hover {
+                        color: $color-k-in;
+                    }
+                    &:nth-of-type(5) i:hover {
+                        color: $color-pint;
+                    }                    
+                    &:last-of-type i:hover {
+                        color: $color-Be;
+                    }                                        
                 }
             }
         }

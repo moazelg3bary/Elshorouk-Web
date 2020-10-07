@@ -20,9 +20,12 @@ html(lang = 'en')
       script(src = './file.js/respond.min.js')
     <![endif]-->
   body
-    .notification
+    .notification-cart
       span: i.fas.fa-bell
       a(href="#") success! you are add item to cart
+    .notification-heart
+      span: i.fas.fa-heart
+      a(href="#") success! you are add item to Fov      
       
     // start header
     .top-header
@@ -75,7 +78,7 @@ html(lang = 'en')
                 li(class="nav-item cart d-inline-block")
                   span.total-cart 0
                   // use icon fontAwesome 5
-                  a(class="nav-link" href="#") #[i.fas.fa-shopping-cart.mx-1]
+                  a(class="nav-link" href="#") #[i.fas.fa-shopping-cart.animation-cart.mx-1]
         .info
           // use container Bootstrap 4
           .container
@@ -121,7 +124,7 @@ html(lang = 'en')
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -133,13 +136,13 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -151,13 +154,13 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -169,13 +172,13 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -187,7 +190,7 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
           .row
             // grid system Bootstrap 4
             .col-sm-6.view
@@ -208,7 +211,7 @@ html(lang = 'en')
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -220,13 +223,13 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -238,13 +241,13 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -256,13 +259,13 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart
+                    li: i.fas.fa-shopping-cart.animation-cart
             .col-sm-12.col-md-6.col-lg-4.col-xl-3.prodect.dir-right.text-right.my-4
               div(class="card")|
                 // use icon fontAwesome 5
                 |
                 |
-                span.cart: i.far.fa-heart|
+                span.heart: i.far.fa-heart|
                 |
                 |
                 div.cont-img: img(src="./image/HTB1r4H2XsfrK1RkSnb4q6xHRFXaw.png" class="card-img-top" alt="img")
@@ -274,7 +277,7 @@ html(lang = 'en')
                   ul.ditlist
                     li تفاصيل المنتج
                     // use icon fontAwesome 5
-                    li: i.fas.fa-shopping-cart                  
+                    li: i.fas.fa-shopping-cart.animation-cart                  
       // End section products
       |
       |

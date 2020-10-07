@@ -13,6 +13,11 @@
                 color: #fff;
                 /* use var sass */
                 background-color: $color-b;
+                /* use mixin sass */
+                @include browser(transition, background-color .2s ease-in-out, o ms moz webkit);
+                &:hover {
+                    background-color: $color-r;
+                }
             }
             span {
                 font-size: 20px;
@@ -25,7 +30,7 @@
         .card {
             border: none;
             cursor: pointer;
-            .cart {
+            .heart {
                 top: 10px;
                 z-index: 1;
                 right: 10px;                
@@ -37,8 +42,12 @@
                 /* use mixin sass */
                 @include browser(border-radius, 50%, o ms moz webkit);
                 @include browser(box-shadow, 1px 1px 7px -1px #999393a8, o ms moz webkit);
+                &:hover i {
+                    font-weight: 900;
+                }
                 i {
                     color: $color-r;
+                    font-size: 20px;
                     line-height: 35px;
                 }
             }
@@ -114,9 +123,16 @@
                         }
                     }
                     &:last-of-type {
+                        overflow: hidden;
                         padding: 10px 15px;
                         /* use var sass */
                         background-color: $color-r;
+                        &:hover  .animation-cart {
+                            animation: cart-animation .3s linear;
+                        }
+                        i {
+                            // @include browser(transition, all .3s ease-in-out, o ms moz webkit);
+                        }
                     }
                 }
             }
@@ -153,10 +169,16 @@
         }                        
     }
     .box-status {
+        @include browser(perspective, 500px, o ms moz webkit);
         .cont-status {
             cursor: pointer;
             /* use mixin sass */
             @include browser(border-radius, 15px, o ms moz webkit);
+            @include browser(transition, all .3s linear, o ms moz webkit);
+            &:hover {
+                @include browser(transform, translateZ(30px), o ms moz webkit);
+                @include browser(box-shadow, 0px 5px 10px 0px #00000040, o ms moz webkit);
+            }
             &.orders {
                 /* use var sass */
                 background-color: $color-rm;
@@ -248,42 +270,57 @@
         }
     }
     .view-img .cont-img {
-        padding: 5px;
+        height: 270px;
+        overflow: hidden;
+        position: relative;
         background-color: #fff;
         /* use var sass */
         border: 1px solid $color-Bg;
         /* use mixin sass */
         @include browser(box-shadow, 0px 1px 4px -3px #a89e9e, o ms moz webkit);
         img {
+            top: 0%;
+            left: 0%;
+            opacity: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
+            padding: 5px;
             max-width: 100%;
+            position: absolute;
+            @include browser(transform, scale(0), o ms moz webkit);
+            @include browser(transition, transform .3s ease-in-out, o ms moz webkit);
+            &.active {
+                z-index: 1;
+                opacity: 1;
+                @include browser(transform, scale(1), o ms moz webkit);
+            }
         }
     }
     .slid-item ul {
         padding: 0;
-        /* use flex box */
-        display: flex;
         list-style: none;
-        justify-content: space-between;
         li {
+            width: 124px;
+            height: 65px;
             padding: 0 5px;
             cursor: pointer;
+            margin-bottom: 10px;
+            display: inline-block;
             background-color: #fff;
             /* use var sass */
             border: 1px solid $color-Bg;
             /* use mixin sass */
             @include browser(box-shadow, 0px 1px 4px -3px #a89e9e, o ms moz webkit);
-            &:not(:first-of-type):not(:last-of-type) {
-                margin: 0 10px;
+            &:not(:last-of-type) {
+                margin-left: 10px;
             }
             &.active {
                 /* use var sass */
                 border: 3px solid $color-b;
             }
             img {
-                height: auto;
-                max-width: 100%;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -370,6 +407,7 @@
         li {
             display: inline-block;
             margin-bottom: 10px;
+             @include browser(transition, background-color .2s ease-in-out, o ms moz webkit);
             &:not(:last-of-type) {
                 margin-left: 10px;
             }
@@ -379,7 +417,11 @@
                 background-color: $color-b;
                 /* use mixin sass */
                 @include browser(border-radius, 22px, o ms moz webkit);
-                @include browser(box-shadow, 1px 2px 5px 0px #00000052, o ms moz webkit);            
+                @include browser(box-shadow, 1px 2px 5px 0px #00000052, o ms moz webkit);
+                &:hover {
+                    background-color: $color-r;
+                    @include browser(box-shadow, 1px 2px 5px 0px #ff000052, o ms moz webkit);
+                }       
             }
             &:nth-of-type(2) button {
                 padding: 10px 20px;
@@ -431,8 +473,34 @@
                 margin-left: 25px;
             }
             i {
+                padding: 5px;
                 font-size: 25px;
                 vertical-align: middle;
+                @include browser(border-radius, 5px, o ms moz webkit);
+                @include browser(transition, color .3s linear, o ms moz webkit);
+                &:hover {
+                    background-color: #fff;
+                    @include browser(box-shadow, 0px 0px 5px 2px #eee, o ms moz webkit);
+                }
+            }
+            &:nth-of-type(2) i:hover {
+                color: $color-Be;
+            }
+            &:nth-of-type(3) i:hover {
+                color: $color-pint;
+            }
+            &:nth-of-type(4) i:hover {
+                color: $color-k-in;
+            }
+            &:nth-of-type(5) i:hover {
+                color: $color-insta;
+                
+            }
+            &:nth-of-type(6) i:hover {
+                color: $color-twitter;
+            }                    
+            &:last-of-type i:hover {
+                color: $color-fb;
             }
         }
     }   
@@ -578,12 +646,17 @@
                 margin-bottom: 15px;
                 button {
                     font-size: 15px;
-                    font-weight: 300;                    
+                    font-weight: 300;
+                    @include browser(transition, all .2s ease-in-out, o ms moz webkit);
                 }
                 &:first-of-type button {
                     color: #fff;
                     /* use var sass */
                     background-color: $color-b;
+                    &:hover {
+                        background-color: $color-r;
+                        @include browser (box-shadow, 1px 2px 5px 0px #ff000052, o ms moz webkit);
+                    }
                     span {
                         margin-left: 5px;
                     }
@@ -596,6 +669,11 @@
                     background: #fff;
                     /* use var sass */
                     border: 1px solid $color-r;
+                    &:hover {
+                        color: #fff;
+                        background-color: $color-r;
+                        @include browser (box-shadow, 1px 2px 5px 0px #ff000052, o ms moz webkit);
+                    }                    
                     span {
                         margin-left: 5px;
                     }
@@ -622,6 +700,12 @@
                     background: #fff;
                     /* use var sass */
                     border: 1px solid $color-r;
+                    @include browser(transition, all .2s ease-in-out, o ms moz webkit);
+                    &:hover {
+                        color: #fff;
+                        background-color: $color-r;
+                        @include browser (box-shadow, 1px 2px 5px 0px #ff000052, o ms moz webkit);
+                    }
                     span {
                         margin-left: 5px;
                     }
@@ -637,6 +721,11 @@
             padding: 5px 25px;
             /* use var sass */
             background-color: $color-b;
+            @include browser(transition, all .2s ease-in-out, o ms moz webkit);
+            &:hover {
+                background-color: $color-r;
+                @include browser (box-shadow, 1px 2px 5px 0px #ff000052, o ms moz webkit);
+            }
         }
     }
     .total {
@@ -738,6 +827,11 @@
         padding: 5px 50px;
         /* use var sass */
         background-color: $color-r;
+        @include browser(transition, all .2s ease-in-out, o ms moz webkit);
+        &:hover {
+            background-color: $color-b;
+            @include browser (box-shadow, 1px 2px 5px 0px #2a509fa8, o ms moz webkit);
+        }
     }
 }
 /* End section Account */
